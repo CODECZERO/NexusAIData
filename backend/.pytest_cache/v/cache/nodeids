@@ -1,0 +1,14 @@
+[
+  "tests/test_blockchain_api.py::test_blockchain_health",
+  "tests/test_blockchain_api.py::test_register_and_fingerprint",
+  "tests/test_blockchain_api.py::test_zk_audit",
+  "tests/test_blockchain_api.py::test_zk_identity_flow",
+  "tests/test_endpoints_real.py::test_data_health",
+  "tests/test_endpoints_real.py::test_forecast",
+  "tests/test_endpoints_real.py::test_pivot",
+  "tests/test_endpoints_real.py::test_pivot_non_numeric",
+  "tests/test_live_server.py::test_data_health",
+  "tests/test_live_server.py::test_forecast",
+  "tests/test_live_server.py::test_pivot",
+  "tests/test_live_server.py::test_pivot_non_numeric"
+]
