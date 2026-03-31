@@ -1,0 +1,2818 @@
+[
+  {
+    "block_number": 0,
+    "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "session_id_hash": "25c87ec2d692db53d4abb41088fe64a1",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "83d4054407962719",
+      "commitment": "d777bc0772910a15c4831873cf40d1a7c55635dd129cd22828a7f4536f08baeb",
+      "nullifier": "c64665c4fd53a179b9412086d665e59fbe6a0cec43e89f8445e34a02b9218f9d",
+      "proof_data": "734b20e982e0ff6c7c36dedb731d030c370298f4f0ddf701c2aa83d445c27891",
+      "verified": true,
+      "timestamp": "2026-03-29T07:09:11Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "a8692bb3990c0345"
+    },
+    "public_metadata": {
+      "filename_hash": "641584fc72d4a6f2",
+      "row_count_bucket": "1K-10K",
+      "column_count": 21,
+      "file_hash": "1e28d3d2f1575f5f7ee5409947c2a47c2fcfc2c4d19882cb2dc87cf75349f6cd",
+      "event": "DATASET_REGISTER"
+    },
+    "timestamp": "2026-03-29T07:09:11Z",
+    "block_hash": "4a5f3f3f23df543d929e3fda169630a3b5a01cd9bcfb8bdd8cc60095fa22cbe7",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 1,
+    "prev_hash": "4a5f3f3f23df543d929e3fda169630a3b5a01cd9bcfb8bdd8cc60095fa22cbe7",
+    "session_id_hash": "c98614080f45f4d747a8ee5f7c66811f",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "57362139214de263",
+      "commitment": "350616e58065934636c3ea84a009c1bce640cbb459d48d0cbf61f3892889af0a",
+      "nullifier": "65db3dd603bd2676eb729c0f45bdd259255630ba69fc29752c7bb215121da807",
+      "proof_data": "5072f2f467504b784225bd0235c5df8f4cd0b057cbfe3733e6be5bffa752fa7c",
+      "verified": true,
+      "timestamp": "2026-03-29T07:17:07Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "cb0172cda1e159ee"
+    },
+    "public_metadata": {
+      "filename_hash": "641584fc72d4a6f2",
+      "row_count_bucket": "1K-10K",
+      "column_count": 21,
+      "file_hash": "da4e9920c12c12fd85a599d047532bbe965665e9e1a4015e263eb48aab060480",
+      "event": "DATASET_REGISTER"
+    },
+    "timestamp": "2026-03-29T07:17:07Z",
+    "block_hash": "dc5a176a47d51071f05e622a153bba3bc0f5b4681f9514124666dda249558656",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 2,
+    "prev_hash": "dc5a176a47d51071f05e622a153bba3bc0f5b4681f9514124666dda249558656",
+    "session_id_hash": "c98614080f45f4d747a8ee5f7c66811f",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "b1b468e929e61b92",
+      "commitment": "342164514a64c16a634a41bac517322ba7c8660370aec0b6845ea2a3f595acae",
+      "nullifier": "3074555f17ec5e26bf5bffb77f3da3271cc106f52007bd4699f524139e3e082d",
+      "proof_data": "3a3307e3f1c3e7224d75366c3b0aadfeaa28deb83c3d70bfb4f98aad1314482a",
+      "verified": true,
+      "timestamp": "2026-03-29T07:32:53Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "cb0172cda1e159ee"
+    },
+    "public_metadata": {
+      "filename_hash": "641584fc72d4a6f2",
+      "row_count_bucket": "1K-10K",
+      "column_count": 21,
+      "file_hash": "da4e9920c12c12fd85a599d047532bbe965665e9e1a4015e263eb48aab060480",
+      "event": "DATASET_REGISTER"
+    },
+    "timestamp": "2026-03-29T07:32:53Z",
+    "block_hash": "6b24ccfe2f6af8ed08756a65bebf824cf99c2f73d2993940f82f0328fa6f5ecf",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 3,
+    "prev_hash": "6b24ccfe2f6af8ed08756a65bebf824cf99c2f73d2993940f82f0328fa6f5ecf",
+    "session_id_hash": "eb91498177667785167c522570a87a3e",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "0da1992fc78c93df",
+      "commitment": "eff8dbed48340c7078e69ae9afbae79bc06f5f7552f6cce61038660064beed6f",
+      "nullifier": "196f06ef95005b58fbbffb5a5a1ca83a7d14c637c3c5a88db6fe911a9e2f258f",
+      "proof_data": "a8c5648620e947ed97e87e77975dd6928ebc9b47a184a84f7104aea35bd0da29",
+      "verified": true,
+      "timestamp": "2026-03-29T07:41:08Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "70d46f9fb95e7d69"
+    },
+    "public_metadata": {
+      "filename_hash": "eafadccc82808491",
+      "row_count_bucket": "1K-10K",
+      "column_count": 10,
+      "file_hash": "92e435fc457b72e3aad976ea718a69759e7c0d9cef1aeae61061f483bc8d187c",
+      "event": "DATASET_REGISTER"
+    },
+    "timestamp": "2026-03-29T07:41:08Z",
+    "block_hash": "ef9f2f21d12a288c490753ceb364778af96b64fa197bc3d279771ca9a7681cf2",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 4,
+    "prev_hash": "ef9f2f21d12a288c490753ceb364778af96b64fa197bc3d279771ca9a7681cf2",
+    "session_id_hash": "eb91498177667785167c522570a87a3e",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "a9e027f34ce57831",
+      "commitment": "9df1facf9782ebb294f4d3a2f713cfbac91b183032e58e7b4ee8616c20a2421e",
+      "nullifier": "12f7e85151a6cd404d42c67a56ae1e2a7c3739f0d6dbb4fc19bec8bb4f1a78ab",
+      "proof_data": "88fe05cf3ceef8caf166ecea635664dc646da319c1cc95322becf90038ebea8b",
+      "verified": true,
+      "timestamp": "2026-03-29T07:46:13Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "70d46f9fb95e7d69"
+    },
+    "public_metadata": {
+      "filename_hash": "eafadccc82808491",
+      "row_count_bucket": "1K-10K",
+      "column_count": 10,
+      "file_hash": "92e435fc457b72e3aad976ea718a69759e7c0d9cef1aeae61061f483bc8d187c",
+      "event": "DATASET_REGISTER"
+    },
+    "timestamp": "2026-03-29T07:46:13Z",
+    "block_hash": "7096ef5028d638d38dea5c6ce542cd128582aee1e60a9a71fdfc52744c0f4eb8",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 5,
+    "prev_hash": "7096ef5028d638d38dea5c6ce542cd128582aee1e60a9a71fdfc52744c0f4eb8",
+    "session_id_hash": "ceaa4c0600a969eeff406762087f64ee",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "5830d5d51d8b2fa9",
+      "commitment": "621b16b235c3e3249b7b6c2e214be21de1bc3d0f68d325ddd592f8eff95f75fa",
+      "nullifier": "e2d2e3c6d295a767d55b99ae35c00123927ef242be9ffc8d037ed117720cee51",
+      "proof_data": "c55cc16951d4cc5181c0122c4852418bfc384b78edaa4a476578390f5092739b",
+      "verified": true,
+      "timestamp": "2026-03-29T07:46:14Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "a32258ab2f1c7582"
+    },
+    "public_metadata": {
+      "filename_hash": "641584fc72d4a6f2",
+      "row_count_bucket": "1K-10K",
+      "column_count": 21,
+      "file_hash": "1768602488a56b12625fc3a230a135ad89c0a4b1288e20dcaace652d4fbdabc2",
+      "event": "DATASET_REGISTER"
+    },
+    "timestamp": "2026-03-29T07:46:14Z",
+    "block_hash": "f1fd67a7da80dbd2abc5bc8efe723b714e8f3af6afa4d0753dd8635dcc00f0b8",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 6,
+    "prev_hash": "f1fd67a7da80dbd2abc5bc8efe723b714e8f3af6afa4d0753dd8635dcc00f0b8",
+    "session_id_hash": "1e2608ebd79a5b8b59db91a8dcb9af62",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "5d9d29e680dcfe85",
+      "commitment": "5f56e8604e021435c7f30bd4ff1dbe6757c254ccf8fe4be05b47f0c733089be0",
+      "nullifier": "8d845a620cf87a304c2c2f28e695a74aadecf66a3745557f99cd6fd5974bf8fa",
+      "proof_data": "bcebe9d5b892f039cc5df42f7fc6ce85b0b3f048f424f71a055a90b425984b25",
+      "verified": true,
+      "timestamp": "2026-03-29T08:46:55Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "f51efdc42e99851a"
+    },
+    "public_metadata": {
+      "filename_hash": "641584fc72d4a6f2",
+      "row_count_bucket": "1K-10K",
+      "column_count": 21,
+      "file_hash": "d144dcf1e1362bbe1de9b515a6084a39406d2f884902b22ccbeb7a9397ac7336",
+      "event": "DATASET_REGISTER"
+    },
+    "timestamp": "2026-03-29T08:46:55Z",
+    "block_hash": "44c118ca2605045075ce95f1f5eeb5054307299095bb14d8beba389486ab589b",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 7,
+    "prev_hash": "44c118ca2605045075ce95f1f5eeb5054307299095bb14d8beba389486ab589b",
+    "session_id_hash": "6d7432c6ae2e7b09cf9ecfd72934865d",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "79219546f6d805ba",
+      "commitment": "b7278979c8001c728356925870d3fa793a10c4c3029a7a4375b417a1dec10c9c",
+      "nullifier": "421eb7b110058ddbda452284b660e2c9dba17207f79f513c919aaef4f7c55bb5",
+      "proof_data": "a86333a8d513c524e9936ed462078563942d6ecee1c930678009b494692f9403",
+      "verified": true,
+      "timestamp": "2026-03-29T08:48:52Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "03fce0a249c91e83"
+    },
+    "public_metadata": {
+      "filename_hash": "641584fc72d4a6f2",
+      "row_count_bucket": "1K-10K",
+      "column_count": 21,
+      "file_hash": "1dfc5cdcff28f8553fc8ff53d066a8a80176140cb86984d61993a4f59a1c480c",
+      "event": "DATASET_REGISTER"
+    },
+    "timestamp": "2026-03-29T08:48:52Z",
+    "block_hash": "f4972215546d5c779697265d2b0aa2a1841e02b6b789b2e61e1fa178e748096a",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 8,
+    "prev_hash": "f4972215546d5c779697265d2b0aa2a1841e02b6b789b2e61e1fa178e748096a",
+    "session_id_hash": "26b9e2d320179c26df59d14db5246411",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "ac68b1ae4888d258",
+      "commitment": "8486cdc0a51f04692e1664b7bb6d703ae84cd0c25723bb5f9e4fb85f51e4e7e4",
+      "nullifier": "bb27aeecb6bd9367a8dacc5a554584189d35582f2a6bb7ab5687b18b9a14e8a9",
+      "proof_data": "33923b1271933acdfd4733b93d1bcffe346f0823c8e30c43f5683b2f973333cd",
+      "verified": true,
+      "timestamp": "2026-03-29T13:36:38Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "fad001eaba22b444"
+    },
+    "public_metadata": {
+      "filename_hash": "641584fc72d4a6f2",
+      "row_count_bucket": "1K-10K",
+      "column_count": 21,
+      "file_hash": "f03a9edfeeface555ea6a3c571ea88e78691c88020f76dd3c5c216964a460e24",
+      "event": "DATASET_REGISTER"
+    },
+    "timestamp": "2026-03-29T13:36:38Z",
+    "block_hash": "6af75e7a29181b246a96b6bdc1926b657ac2b47987dc94be5b5c29d85d6e9e33",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 9,
+    "prev_hash": "6af75e7a29181b246a96b6bdc1926b657ac2b47987dc94be5b5c29d85d6e9e33",
+    "session_id_hash": "f55d47beb62e5d61c016667debc40dd6",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "8923475f8e52a5c2",
+      "commitment": "13b709f3e81ca5e259ced173e50b3f25ac75839b50a350f22cd83c1f034ad04a",
+      "nullifier": "9c1dea487cacd7a268578f43eb6d1166686b88e2f8c154cac73f11196710a84c",
+      "proof_data": "b34e9027f71d6d1649cafb1768912505c02bf407777f9b4bc26ef91573ee1ad5",
+      "verified": true,
+      "timestamp": "2026-03-29T14:05:32Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "41e4b15c27063667"
+    },
+    "public_metadata": {
+      "filename_hash": "641584fc72d4a6f2",
+      "row_count_bucket": "1K-10K",
+      "column_count": 21,
+      "file_hash": "60c3ff82da3eefa8501af769b0928a4d58ac073a7a2e069634508fd1ca17c5df",
+      "event": "DATASET_REGISTER"
+    },
+    "timestamp": "2026-03-29T14:05:32Z",
+    "block_hash": "8efd7a8f86fe985ad8554962287aa0d9adc5e02e400489f1dac436e14ad87c04",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 10,
+    "prev_hash": "8efd7a8f86fe985ad8554962287aa0d9adc5e02e400489f1dac436e14ad87c04",
+    "session_id_hash": "f1ae0c1ce74a0d22d4d0d881a43b8a84",
+    "event_type": "FINGERPRINT",
+    "zk_proof": {
+      "proof_id": "57c5cd76e6826bd5",
+      "commitment": "7b5bab24826fffc7a61876caaac4458bbbb34846aa8c186158c3deee1845a3bc",
+      "nullifier": "87e9041db7ae1283f0b5fb1bcccaea63ac1e77e9061c6e49b39bf8c2f29b487e",
+      "proof_data": "f59d77aebe540abc690622130756e17809737cb7616a4f730171967694be0a1d",
+      "verified": true,
+      "timestamp": "2026-04-05T04:59:47Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "7b9f15e3f5cd1c21"
+    },
+    "public_metadata": {
+      "fingerprint_id": "dc6b6856-632f-49",
+      "column_count": 21,
+      "data_category": "financial",
+      "event": "FINGERPRINT"
+    },
+    "timestamp": "2026-04-05T04:59:47Z",
+    "block_hash": "90454fc7bc4bf5cd4a6561f96f2bc507a45d19a663dad4fac9931c1586fcda6b",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 11,
+    "prev_hash": "90454fc7bc4bf5cd4a6561f96f2bc507a45d19a663dad4fac9931c1586fcda6b",
+    "session_id_hash": "f1ae0c1ce74a0d22d4d0d881a43b8a84",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "ee81ac334028c6bc",
+      "commitment": "05ec3df0510df812020ee1f8ba3c9882bbba9f37bf093495e571d3457afc98fc",
+      "nullifier": "009881d6235160dfdd0c7f9d0d27974b4e8c19b53d4337810084e3be309e147d",
+      "proof_data": "5dbd43e93f3746214f63aa043fc8fb62456a199ab05e3ba5e3e7c1aab352f11a",
+      "verified": true,
+      "timestamp": "2026-04-05T04:59:47Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "9f3d67f8abc7a979"
+    },
+    "public_metadata": {
+      "filename_hash": "641584fc72d4a6f2",
+      "row_count_bucket": "1K-10K",
+      "column_count": 21,
+      "file_hash": "48baf542b6f75a7a9a6f7cf75c0af9c0043818ab522bed816f01813391ba246f",
+      "event": "DATASET_REGISTER"
+    },
+    "timestamp": "2026-04-05T04:59:47Z",
+    "block_hash": "5fc313e23de4930fe1d9e8bacec99e457035eab0aecf6244257ffe3c18bd474f",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 12,
+    "prev_hash": "5fc313e23de4930fe1d9e8bacec99e457035eab0aecf6244257ffe3c18bd474f",
+    "session_id_hash": "f42627ff1f464130a7c57ca48ae4ec18",
+    "event_type": "FINGERPRINT",
+    "zk_proof": {
+      "proof_id": "9ff33a6fffbc8112",
+      "commitment": "eefecd01654c88046c9dc0a79baca05a2d113502d30da42daeb21b291bffe16a",
+      "nullifier": "7d5d6a2d7cbb480cd66230535e3a803754c88bd06cdf4a86c5fe9a1076510b12",
+      "proof_data": "287708da135efcfbf96d05499093b6154454c7958c8a07e8330c1101f690ca6d",
+      "verified": true,
+      "timestamp": "2026-04-05T04:59:48Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "4f869a570dad36ca"
+    },
+    "public_metadata": {
+      "fingerprint_id": "984adee6-6bae-42",
+      "column_count": 21,
+      "data_category": "financial",
+      "event": "FINGERPRINT"
+    },
+    "timestamp": "2026-04-05T04:59:48Z",
+    "block_hash": "31e268ef704f26f882338ec00799ba58edf433a7e88a66029436bdd745012693",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 13,
+    "prev_hash": "31e268ef704f26f882338ec00799ba58edf433a7e88a66029436bdd745012693",
+    "session_id_hash": "f5184c573adb4dc4e459b2b5e2d90545",
+    "event_type": "FINGERPRINT",
+    "zk_proof": {
+      "proof_id": "e74e746d1acaab24",
+      "commitment": "383457227e81cdf02f84399abc62f6a727af2f5f62904a4f459896b0da14b40a",
+      "nullifier": "8367d34e172380fde0cddf0cc43cc5dd00c78151e85c5759917214b2afba0a80",
+      "proof_data": "810fa2adb48c59ed5649eb40014c56bbdc148545113832f7e820e8faf859ca11",
+      "verified": true,
+      "timestamp": "2026-04-05T05:30:07Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "996568b68d9e8e21"
+    },
+    "public_metadata": {
+      "fingerprint_id": "a242aa5a-e13f-40",
+      "column_count": 18,
+      "data_category": "financial",
+      "event": "FINGERPRINT"
+    },
+    "timestamp": "2026-04-05T05:30:07Z",
+    "block_hash": "c91bf84157b7b4d6c96e2b32988a58e0b7b550cddb02161cbe11c21fa8c761c2",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 14,
+    "prev_hash": "c91bf84157b7b4d6c96e2b32988a58e0b7b550cddb02161cbe11c21fa8c761c2",
+    "session_id_hash": "8944d3674e2da727bb090837c15ef1cd",
+    "event_type": "FINGERPRINT",
+    "zk_proof": {
+      "proof_id": "a76aac6837013391",
+      "commitment": "366f487697b041f0523ae6cf2a75797e46dd4be5c2ac9228ad1c764a5fd36ab0",
+      "nullifier": "3fdb2e81628940022ec422696aa60c42ba77d905098beb5542addc98794a20d6",
+      "proof_data": "446b7b9fca61b3bd08891424e261acf16f24f84e5677f5266fb56d7b978aff80",
+      "verified": true,
+      "timestamp": "2026-04-05T05:30:07Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "71655b7480b040ae"
+    },
+    "public_metadata": {
+      "fingerprint_id": "17e9c5b9-e9b1-42",
+      "column_count": 21,
+      "data_category": "financial",
+      "event": "FINGERPRINT"
+    },
+    "timestamp": "2026-04-05T05:30:07Z",
+    "block_hash": "105343c7a5a450bb4ac78174e2358b8ccaf90f3fc663730e2c2455c1b221ecc6",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 15,
+    "prev_hash": "105343c7a5a450bb4ac78174e2358b8ccaf90f3fc663730e2c2455c1b221ecc6",
+    "session_id_hash": "b8652fa799dd8ab61515a2dcb7cb977b",
+    "event_type": "FINGERPRINT",
+    "zk_proof": {
+      "proof_id": "cffe875f157e9488",
+      "commitment": "86e75f92bf8dd49327df355f7a7aa15398d52956f3d5a14d73d2bd9fe3bb83b4",
+      "nullifier": "ccbc20c8fea82095482b3cdffea27433b39ec6c2667cda3bb6bd8b8ac85788d6",
+      "proof_data": "9db91fc65b888e4f5e99d646130d56d5990eb61d42dfd2e5ae83b7658324988a",
+      "verified": true,
+      "timestamp": "2026-04-05T05:30:07Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "3cab5433fd91dbce"
+    },
+    "public_metadata": {
+      "fingerprint_id": "c3a21398-806e-46",
+      "column_count": 18,
+      "data_category": "financial",
+      "event": "FINGERPRINT"
+    },
+    "timestamp": "2026-04-05T05:30:07Z",
+    "block_hash": "bdb2113c4217e53f7bca09310f36a61ad42687be06f0f0ce5cdde174316e92bc",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 16,
+    "prev_hash": "bdb2113c4217e53f7bca09310f36a61ad42687be06f0f0ce5cdde174316e92bc",
+    "session_id_hash": "b8652fa799dd8ab61515a2dcb7cb977b",
+    "event_type": "FINGERPRINT",
+    "zk_proof": {
+      "proof_id": "80186dd1dfbdf872",
+      "commitment": "8eb5f3bb2e34216df9ae0e576aa31361c905ce7d69c682dc0a1b3853326b2d9d",
+      "nullifier": "670108de2eeb5d2f1f798cc81b2e7e0adc05422f554742339308a22e184556e1",
+      "proof_data": "2c6beea7ea7383a71068da0e609491f8a22b43b2f1416c08dd01ed1f1c5d2cd0",
+      "verified": true,
+      "timestamp": "2026-04-05T05:30:07Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "a054d08cfd543551"
+    },
+    "public_metadata": {
+      "fingerprint_id": "baffa138-a18f-48",
+      "column_count": 18,
+      "data_category": "financial",
+      "event": "FINGERPRINT"
+    },
+    "timestamp": "2026-04-05T05:30:07Z",
+    "block_hash": "5fa592215a4d901372b915cef7e1a02c1f9131c33c095e5cc39ce3156834e872",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 17,
+    "prev_hash": "5fa592215a4d901372b915cef7e1a02c1f9131c33c095e5cc39ce3156834e872",
+    "session_id_hash": "b8652fa799dd8ab61515a2dcb7cb977b",
+    "event_type": "FINGERPRINT",
+    "zk_proof": {
+      "proof_id": "7a05393b177eea09",
+      "commitment": "968d4248de08018d3b7a8abb97c2aaf22b5eb192c497ea010347b2a90dc58a20",
+      "nullifier": "371665b350917b296c4dbd6630a374af326543e8cc5d2f3640ef3652e71f04d4",
+      "proof_data": "751eb45a3517eb5ebd049fae1c32cc54491412495c353e2736194f1386998c69",
+      "verified": true,
+      "timestamp": "2026-04-05T05:30:07Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "cb1b0136ca889a68"
+    },
+    "public_metadata": {
+      "fingerprint_id": "8a62528d-3c5d-4e",
+      "column_count": 18,
+      "data_category": "financial",
+      "event": "FINGERPRINT"
+    },
+    "timestamp": "2026-04-05T05:30:07Z",
+    "block_hash": "1924f3b9a9b2033c3c384d5b0dfcf2867b2ac4034590f2a3d468c88220b1a4c5",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 18,
+    "prev_hash": "1924f3b9a9b2033c3c384d5b0dfcf2867b2ac4034590f2a3d468c88220b1a4c5",
+    "session_id_hash": "8fa011425243b23f6223ee386bb9d369",
+    "event_type": "FINGERPRINT",
+    "zk_proof": {
+      "proof_id": "b8e3e686ef1f35a6",
+      "commitment": "146ade787cdf12a2001a3a9817bc5fdabf88f6686530a60d6e1b53db8c255355",
+      "nullifier": "06a8cc22804af4224a76ada4be40e6ff7246c3bce947bb9e11a778f43520fbd3",
+      "proof_data": "ca496d40c01b3105d379ac389d7b7f4b4de564f74bf84b0c14708f746759885f",
+      "verified": true,
+      "timestamp": "2026-04-05T05:30:08Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "ac441a6025fc9ed8"
+    },
+    "public_metadata": {
+      "fingerprint_id": "4a302e3d-e4e4-4c",
+      "column_count": 18,
+      "data_category": "financial",
+      "event": "FINGERPRINT"
+    },
+    "timestamp": "2026-04-05T05:30:08Z",
+    "block_hash": "c451f7d87b06dd87889126c12cb8fef12c372df9ff9fb3b5c0200dab88cc04ae",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 19,
+    "prev_hash": "c451f7d87b06dd87889126c12cb8fef12c372df9ff9fb3b5c0200dab88cc04ae",
+    "session_id_hash": "24730690a0f9d2898c9f0bf5ba2511a5",
+    "event_type": "FINGERPRINT",
+    "zk_proof": {
+      "proof_id": "c8533d97593ff04a",
+      "commitment": "59d8544ee8e55771fd8fad02878c78434e0973c109b4f81cb6f8c93ba64fc518",
+      "nullifier": "cabf19be2e774b81748e0dff3ac35bb9464985fe4766a68bbbd84270b08bf627",
+      "proof_data": "f741f95eed1d6b2bfe1d5d91c5657b5570059537b2c6c658849aa7842f82a4e6",
+      "verified": true,
+      "timestamp": "2026-04-05T05:30:08Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "6cecbbbf67c94b4c"
+    },
+    "public_metadata": {
+      "fingerprint_id": "44bc0f7d-d3ab-40",
+      "column_count": 18,
+      "data_category": "financial",
+      "event": "FINGERPRINT"
+    },
+    "timestamp": "2026-04-05T05:30:08Z",
+    "block_hash": "51a16e9c63fb9de280a28fe430de49b34523c2a4ff796bd3e568d33f135513b4",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 20,
+    "prev_hash": "51a16e9c63fb9de280a28fe430de49b34523c2a4ff796bd3e568d33f135513b4",
+    "session_id_hash": "edc9caec683ec5f74a8e7053263e39a1",
+    "event_type": "FINGERPRINT",
+    "zk_proof": {
+      "proof_id": "48d8848c5eb4838d",
+      "commitment": "01796f8fe18e6d4d79901c2275133d0dddaf50929691bb467a9bb900954bab24",
+      "nullifier": "d90d129c1638d2c3b9b43166d06c46da9169d7aedc72444f5f45be35ae40bdf9",
+      "proof_data": "6d4e56bcde517846446135ba880af6b7d9de53584d4d54dbfbcc3d3aa1fdca78",
+      "verified": true,
+      "timestamp": "2026-04-05T05:31:00Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "9d2d40490ebb9489"
+    },
+    "public_metadata": {
+      "fingerprint_id": "0516f010-db85-4a",
+      "column_count": 18,
+      "data_category": "financial",
+      "event": "FINGERPRINT"
+    },
+    "timestamp": "2026-04-05T05:31:00Z",
+    "block_hash": "1e2169b18656dc0ef082e501565bf99435cac01f1ec2756f5cfb1d6c7ac6da5d",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 21,
+    "prev_hash": "1e2169b18656dc0ef082e501565bf99435cac01f1ec2756f5cfb1d6c7ac6da5d",
+    "session_id_hash": "6f4b5c97004b3e3dfd9a741bd9b6bd66",
+    "event_type": "FINGERPRINT",
+    "zk_proof": {
+      "proof_id": "2d3cbb93b147fef3",
+      "commitment": "174dcaf0b549549ae55fdfb462c6be08d5cb7061664ba42dfbbde3673cab60e8",
+      "nullifier": "2b9176e3e62ed5edb46ffe181782db8ec5b56ceec344fe3b86ecf3300418b12e",
+      "proof_data": "56b3180131fb555e8b46fe0224b61e67dca8dcbacf00dfbe595f5b7900bacad3",
+      "verified": true,
+      "timestamp": "2026-04-05T05:31:00Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "0d8b7bc90aea5f8c"
+    },
+    "public_metadata": {
+      "fingerprint_id": "7a0cd593-61ba-4e",
+      "column_count": 21,
+      "data_category": "financial",
+      "event": "FINGERPRINT"
+    },
+    "timestamp": "2026-04-05T05:31:00Z",
+    "block_hash": "8ad54663297fb24dec46cf4d151fb5735b0706413bb7fff35aa01c1a9cf7dcfa",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 22,
+    "prev_hash": "8ad54663297fb24dec46cf4d151fb5735b0706413bb7fff35aa01c1a9cf7dcfa",
+    "session_id_hash": "163edb14ae79236a470114fbfac7f811",
+    "event_type": "FINGERPRINT",
+    "zk_proof": {
+      "proof_id": "7c618bae54cd984a",
+      "commitment": "9562e2e01d9d63607ea2c864bd4b89d20f5c1159f8c1d58f0d3b6f88da84a3c6",
+      "nullifier": "dc4bdce7757bf6a1508da8fce825ef2d5b42b8aed880ec04f01ef76dbfe87621",
+      "proof_data": "cad4552394cb546de4aca07b8347fbe9194cd500436c17e70f11054ecdcbb848",
+      "verified": true,
+      "timestamp": "2026-04-05T05:31:01Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "8dfa04f6852d0698"
+    },
+    "public_metadata": {
+      "fingerprint_id": "0ea63ecc-6582-4f",
+      "column_count": 18,
+      "data_category": "financial",
+      "event": "FINGERPRINT"
+    },
+    "timestamp": "2026-04-05T05:31:01Z",
+    "block_hash": "126da24c712fab1e46194c9df8212611afc27a06bed536a22155c00d756a67a9",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 23,
+    "prev_hash": "126da24c712fab1e46194c9df8212611afc27a06bed536a22155c00d756a67a9",
+    "session_id_hash": "163edb14ae79236a470114fbfac7f811",
+    "event_type": "FINGERPRINT",
+    "zk_proof": {
+      "proof_id": "720e0517643cfc6c",
+      "commitment": "d665f4d47fd732cf6c72952828957754eac1af71f9e7e967651151cbc034f893",
+      "nullifier": "9c84bd449a0be202d998c201464b38783c6a3d2baa24a93aea48d3563837e268",
+      "proof_data": "7c94b124f6ffc1a6b7e78f3766fd80fd34f3c95fb63eee4dda4d8478c9e5fb32",
+      "verified": true,
+      "timestamp": "2026-04-05T05:31:01Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "d20774ef4287f544"
+    },
+    "public_metadata": {
+      "fingerprint_id": "4f44053d-90ec-45",
+      "column_count": 18,
+      "data_category": "financial",
+      "event": "FINGERPRINT"
+    },
+    "timestamp": "2026-04-05T05:31:01Z",
+    "block_hash": "f8361aeea7fe91308120effa48a44cd69fc3b5ec489926332f3c6d770bbfc4f4",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 24,
+    "prev_hash": "f8361aeea7fe91308120effa48a44cd69fc3b5ec489926332f3c6d770bbfc4f4",
+    "session_id_hash": "163edb14ae79236a470114fbfac7f811",
+    "event_type": "FINGERPRINT",
+    "zk_proof": {
+      "proof_id": "814b86d38ca58341",
+      "commitment": "4b48beb0a87af73544daa4a0f6e6085c1906dd3d93dfc7ece37dec38d93a82a1",
+      "nullifier": "ffe069d9d905f904ddc6920728dcd1b602a2f9212502ed7a4fc668d7dc444459",
+      "proof_data": "5643356fdec2885ce4cda7f602c54dc63f12ffca065939bd5aa5f0688f8e3fb5",
+      "verified": true,
+      "timestamp": "2026-04-05T05:31:01Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "0948a4b324094fe8"
+    },
+    "public_metadata": {
+      "fingerprint_id": "38ef38d7-c1eb-45",
+      "column_count": 18,
+      "data_category": "financial",
+      "event": "FINGERPRINT"
+    },
+    "timestamp": "2026-04-05T05:31:01Z",
+    "block_hash": "ecd75bfb708a2d9f42c69af2dd745c3b6405213303dc9b95cf5df6faee0a2ca6",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 25,
+    "prev_hash": "ecd75bfb708a2d9f42c69af2dd745c3b6405213303dc9b95cf5df6faee0a2ca6",
+    "session_id_hash": "d27e5f91e57baf87bd9157bcb1b1e978",
+    "event_type": "FINGERPRINT",
+    "zk_proof": {
+      "proof_id": "60fa5b315de8e723",
+      "commitment": "b333524302c2749ff5ddf4909098851a8d398eb81725eeb0680d37291e77646b",
+      "nullifier": "c9477183a2ec03e4f1459901a5016a09c19ba48d633d9da00acc3502e625e93b",
+      "proof_data": "c5979f4efab97f9a91fe560589932d692048920d5ae52da573ac7bc5d2aa464c",
+      "verified": true,
+      "timestamp": "2026-04-05T05:31:01Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "ea959e67eb663f87"
+    },
+    "public_metadata": {
+      "fingerprint_id": "14795abf-8e8f-46",
+      "column_count": 18,
+      "data_category": "financial",
+      "event": "FINGERPRINT"
+    },
+    "timestamp": "2026-04-05T05:31:01Z",
+    "block_hash": "ea5a1b196080fecfe161ee9f204d3542f08ab98d6bf0a4c070e9bca649ecc67e",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 26,
+    "prev_hash": "ea5a1b196080fecfe161ee9f204d3542f08ab98d6bf0a4c070e9bca649ecc67e",
+    "session_id_hash": "3737558384ca30438b44696a27505740",
+    "event_type": "FINGERPRINT",
+    "zk_proof": {
+      "proof_id": "c53a1d822847f9d6",
+      "commitment": "b241b2d8e9c3fd80aa9b4f52252be69e354a9835f70fb3948daf38d42fcb8e84",
+      "nullifier": "e1fc971913f7008c70969c413601042f41f2ecfa001e91f67103a57f368bbf61",
+      "proof_data": "94434ddee89f6980c43109ff92d988e4ddeef7bf82b58d4424a1ce7b1ac4ba1c",
+      "verified": true,
+      "timestamp": "2026-04-05T05:31:01Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "34491bb92f5e7bd7"
+    },
+    "public_metadata": {
+      "fingerprint_id": "77fa9f61-bf75-4a",
+      "column_count": 18,
+      "data_category": "financial",
+      "event": "FINGERPRINT"
+    },
+    "timestamp": "2026-04-05T05:31:01Z",
+    "block_hash": "5574597156b54a5e10eb702208bcf2d5b17daae440a900a63727354c9a53d91e",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 27,
+    "prev_hash": "5574597156b54a5e10eb702208bcf2d5b17daae440a900a63727354c9a53d91e",
+    "session_id_hash": "25e1102c18fd6c7646628dd1fb147cc9",
+    "event_type": "FINGERPRINT",
+    "zk_proof": {
+      "proof_id": "bd51ae1bfe6ee8c4",
+      "commitment": "2f6069a3a2adb760f1bb30ee89180efa49f25af64cc4f12ba49745784b169524",
+      "nullifier": "e1cc5f46b0b8226a18b897332554f3a7490292d92f239027a229467582491c6f",
+      "proof_data": "c3a566ed1e190c6b97a64c0ce53895e59b943b0ec69ac501fe8cabd3ae46473f",
+      "verified": true,
+      "timestamp": "2026-04-05T05:34:31Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "fcf638846af2038c"
+    },
+    "public_metadata": {
+      "fingerprint_id": "4c1587c6-2d2b-4b",
+      "column_count": 18,
+      "data_category": "financial",
+      "event": "FINGERPRINT"
+    },
+    "timestamp": "2026-04-05T05:34:31Z",
+    "block_hash": "e86c05ed05a565c96c2259887d1cd707a906232e917b1563aae9a491989bb6d5",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 28,
+    "prev_hash": "e86c05ed05a565c96c2259887d1cd707a906232e917b1563aae9a491989bb6d5",
+    "session_id_hash": "dbac722e14b7a9fede569bcbc1232e78",
+    "event_type": "FINGERPRINT",
+    "zk_proof": {
+      "proof_id": "99dc05510ecb2d57",
+      "commitment": "1a008e03ae22b9bd99f6e7ae5a1a250839a13bdf43e85cfad292bdfa96555d19",
+      "nullifier": "5bc0f9f15af2713a08dd74c57ffe8df0be715f255036f0a4ebe1730c3c67d1ef",
+      "proof_data": "5ae3576f04c60661a0c33930e90e06a8e6b8c4dcb2101d0e99cd36fd92573099",
+      "verified": true,
+      "timestamp": "2026-04-05T05:34:31Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "dd5bd49d9aaca96f"
+    },
+    "public_metadata": {
+      "fingerprint_id": "579f1243-fb6a-40",
+      "column_count": 21,
+      "data_category": "financial",
+      "event": "FINGERPRINT"
+    },
+    "timestamp": "2026-04-05T05:34:31Z",
+    "block_hash": "618e3b4f63c3654663da33cb638f0a871e6d6d13e26f2a8e5fafb958e192bd85",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 29,
+    "prev_hash": "618e3b4f63c3654663da33cb638f0a871e6d6d13e26f2a8e5fafb958e192bd85",
+    "session_id_hash": "ed02a763a6e17c52fb13c224eb03a1c6",
+    "event_type": "FINGERPRINT",
+    "zk_proof": {
+      "proof_id": "c8ee95ec36bd6ee9",
+      "commitment": "34730116edaa031512582d0264e1fa9dae3772b1601ab4e669cfda1398f5731b",
+      "nullifier": "c830524a97501d5848226b08122062d26b690a23e42f46cf0cbb2e1d57ff268c",
+      "proof_data": "fc301039332af00b5cefcfc79d1a37abdffdfda804c14d33cf932adc9fb44cb5",
+      "verified": true,
+      "timestamp": "2026-04-05T05:34:31Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "4469b732adf39f66"
+    },
+    "public_metadata": {
+      "fingerprint_id": "fe3cb2c1-421b-49",
+      "column_count": 18,
+      "data_category": "financial",
+      "event": "FINGERPRINT"
+    },
+    "timestamp": "2026-04-05T05:34:31Z",
+    "block_hash": "78a7c1a7503c9df9f4b3b3e72bce5d96de4759950ade9eca0016a2822aa34e01",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 30,
+    "prev_hash": "78a7c1a7503c9df9f4b3b3e72bce5d96de4759950ade9eca0016a2822aa34e01",
+    "session_id_hash": "ed02a763a6e17c52fb13c224eb03a1c6",
+    "event_type": "FINGERPRINT",
+    "zk_proof": {
+      "proof_id": "4e12297a83585e2b",
+      "commitment": "145c228338351e93a9e29ca365a16e312ae12b1af590d443ed5321a0fc9820cb",
+      "nullifier": "e46ab4754097d65a7c2a52d5de4a44d99667d67a18dfd6f3a6bf7853004c3f51",
+      "proof_data": "db8e1c717fcf90ea174769825db5896d3e702323027b92e7ff14a0e992c71900",
+      "verified": true,
+      "timestamp": "2026-04-05T05:34:31Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "ed6b0d069727a3ab"
+    },
+    "public_metadata": {
+      "fingerprint_id": "ff2d41d1-d5a8-46",
+      "column_count": 18,
+      "data_category": "financial",
+      "event": "FINGERPRINT"
+    },
+    "timestamp": "2026-04-05T05:34:31Z",
+    "block_hash": "150639eca7c52671dbb6f47a40c851bbfdf026ee04faf29b54b8ebef3b6035d4",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 31,
+    "prev_hash": "150639eca7c52671dbb6f47a40c851bbfdf026ee04faf29b54b8ebef3b6035d4",
+    "session_id_hash": "ed02a763a6e17c52fb13c224eb03a1c6",
+    "event_type": "FINGERPRINT",
+    "zk_proof": {
+      "proof_id": "9c0fdd9e3f8e879f",
+      "commitment": "8f7329c500d874ca5ec93113001a96fa1c897c9560d8c08bde38b6af971fa7bf",
+      "nullifier": "d2c3f3d78b0e63cc60abc4754cd224100175266b0af0897ebe97a0e64c52e42a",
+      "proof_data": "a7b268fe411e4ee6220078b14e46c7bba8047c37dbe9bb60f0d244c35a88fa36",
+      "verified": true,
+      "timestamp": "2026-04-05T05:34:31Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "080e15ab4029d7e8"
+    },
+    "public_metadata": {
+      "fingerprint_id": "c09edd1c-f19d-42",
+      "column_count": 18,
+      "data_category": "financial",
+      "event": "FINGERPRINT"
+    },
+    "timestamp": "2026-04-05T05:34:31Z",
+    "block_hash": "48f44ea5a0df02647df0841b2b0f2187574464b03381b021d3a8e753fcdc386f",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 32,
+    "prev_hash": "48f44ea5a0df02647df0841b2b0f2187574464b03381b021d3a8e753fcdc386f",
+    "session_id_hash": "6792fc7f95d72f687e8dd1a2a53d9a04",
+    "event_type": "FINGERPRINT",
+    "zk_proof": {
+      "proof_id": "1489cc5fe11d9367",
+      "commitment": "6a958f8f9071b31bbabbcc270082b4b2257bb63a74309d3b7a95236e7d78312a",
+      "nullifier": "1b3068875899038054452a1ad283e4b5c2d53522853423cdb70d1396007bab13",
+      "proof_data": "78979b26ccdce315d825e609f43fd9a7ce0b8fbe7320f2897c3f149645f4dda1",
+      "verified": true,
+      "timestamp": "2026-04-05T05:34:31Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "e10c26c0a5a3c654"
+    },
+    "public_metadata": {
+      "fingerprint_id": "f5cff4a8-ce00-4f",
+      "column_count": 18,
+      "data_category": "financial",
+      "event": "FINGERPRINT"
+    },
+    "timestamp": "2026-04-05T05:34:31Z",
+    "block_hash": "496a1d8fd148e7f3b1eaa0e643a011a89fe22c27d319e0684b955f3544e8ee31",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 33,
+    "prev_hash": "496a1d8fd148e7f3b1eaa0e643a011a89fe22c27d319e0684b955f3544e8ee31",
+    "session_id_hash": "7eba0fbe192506324f31b9ea4c50cc19",
+    "event_type": "FINGERPRINT",
+    "zk_proof": {
+      "proof_id": "c65257db33f7e3a9",
+      "commitment": "dfe7fea77ac5a6c9d178a83a204c5ca364ffb8685b672c3334013925f78bc070",
+      "nullifier": "2ab10243add9ad0886766e8ce63c47d9a153f94a0193d2488d1bf3f10e93f68d",
+      "proof_data": "8957c341510e8f6ea34650c6ec45cdc0f15c62ef44fae7584f70ae46553b2a5a",
+      "verified": true,
+      "timestamp": "2026-04-05T05:34:31Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "d4e8a93ebd671f52"
+    },
+    "public_metadata": {
+      "fingerprint_id": "8ede3157-db76-4f",
+      "column_count": 18,
+      "data_category": "financial",
+      "event": "FINGERPRINT"
+    },
+    "timestamp": "2026-04-05T05:34:31Z",
+    "block_hash": "287e7781d46c5b2c229d9799a978f9e85dc23542417ee7ef2927aefec4419358",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 34,
+    "prev_hash": "287e7781d46c5b2c229d9799a978f9e85dc23542417ee7ef2927aefec4419358",
+    "session_id_hash": "f0a0667e0a5ac518e3a4a66892f1db7d",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "b72924096e7638dc",
+      "commitment": "7fbc8aa94a013c951208b98cf32a3c0e5dfebb29ffaee60283432765cd94488d",
+      "nullifier": "255f9cc687b63cf86dfa164679a4a8b56d5d07bef3ba5dcb4909ba1e8ce1aca3",
+      "proof_data": "fbe0e5b12792a6e413a0b1cb6e25c35620fed44689c2bccf119d725710ddfa8e",
+      "verified": true,
+      "timestamp": "2026-04-05T05:40:04Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "9f3d67f8abc7a979"
+    },
+    "public_metadata": {
+      "filename_hash": "641584fc72d4a6f2",
+      "row_count_bucket": "1K-10K",
+      "column_count": 21,
+      "file_hash": "48baf542b6f75a7a9a6f7cf75c0af9c0043818ab522bed816f01813391ba246f",
+      "event": "DATASET_REGISTER"
+    },
+    "timestamp": "2026-04-05T05:40:04Z",
+    "block_hash": "7cb2a467977c0a31383733f08c213e2811a5d8013633b0425f8ebc833ecef1a5",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 35,
+    "prev_hash": "7cb2a467977c0a31383733f08c213e2811a5d8013633b0425f8ebc833ecef1a5",
+    "session_id_hash": "8ca02f265281b00d3155088f900212af",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "66a9805225713e99",
+      "commitment": "8091ef78397bdf2aabc6cc36dfdc480f710c74e309ce2850fbbbcd471ee74389",
+      "nullifier": "3ded3d491981854ee4ef60c933bccc38213f982d5c4a85d3319b18d305db3c8a",
+      "proof_data": "85af764458e4e48aec20ea7194abc06dd2526c5a79fc4116cb28654e4c181fc0",
+      "verified": true,
+      "timestamp": "2026-04-05T05:51:45Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "9f3d67f8abc7a979"
+    },
+    "public_metadata": {
+      "filename_hash": "641584fc72d4a6f2",
+      "row_count_bucket": "1K-10K",
+      "column_count": 21,
+      "file_hash": "48baf542b6f75a7a9a6f7cf75c0af9c0043818ab522bed816f01813391ba246f",
+      "event": "DATASET_REGISTER"
+    },
+    "timestamp": "2026-04-05T05:51:45Z",
+    "block_hash": "3a6e5089295927cb26a9450fb565c53574b97bb395a8142483f6cf15ce1bd34b",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 36,
+    "prev_hash": "3a6e5089295927cb26a9450fb565c53574b97bb395a8142483f6cf15ce1bd34b",
+    "session_id_hash": "71066c0c9e1519afc083884d4bb28bf0",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "e1993fafd2d8766b",
+      "commitment": "c7c04f706579c727cc35632611c10020a76e2d04db9995efea939e996cabffbc",
+      "nullifier": "e284c46eb5f0e9029b2a74145822e0188ed0b2db1ce2a23e9bf7e90cfb68905f",
+      "proof_data": "8528012360cb5902e528d5d91444651a2d4179d870b123b3cba8eb9de761b8fa",
+      "verified": true,
+      "timestamp": "2026-04-05T06:10:25Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "9f3d67f8abc7a979"
+    },
+    "public_metadata": {
+      "filename_hash": "641584fc72d4a6f2",
+      "row_count_bucket": "1K-10K",
+      "column_count": 21,
+      "file_hash": "48baf542b6f75a7a9a6f7cf75c0af9c0043818ab522bed816f01813391ba246f",
+      "event": "DATASET_REGISTER"
+    },
+    "timestamp": "2026-04-05T06:10:25Z",
+    "block_hash": "2a6a1b3b23b057559abf9a199e9cd7b5e5c0936d6a11fb5848a7261479ea3f28",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 37,
+    "prev_hash": "2a6a1b3b23b057559abf9a199e9cd7b5e5c0936d6a11fb5848a7261479ea3f28",
+    "session_id_hash": "f8a86d902ba67a8ed277945deb695c8f",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "a6c99b57b13654e7",
+      "commitment": "2aed940bdee2dc7fac89d9139c137bddafc8b9afe0b818189aa895c1634046a8",
+      "nullifier": "d745cd1233bb38c269451e2e7b3e4b26d84a48d7ef57d582d2af3d39c9dc1753",
+      "proof_data": "603b320bedfe35687094c6a53ec66ebe76cd47d3976884cb29baf669de47b514",
+      "verified": true,
+      "timestamp": "2026-04-05T06:14:42Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "9f3d67f8abc7a979"
+    },
+    "public_metadata": {
+      "filename_hash": "641584fc72d4a6f2",
+      "row_count_bucket": "1K-10K",
+      "column_count": 21,
+      "file_hash": "48baf542b6f75a7a9a6f7cf75c0af9c0043818ab522bed816f01813391ba246f",
+      "event": "DATASET_REGISTER"
+    },
+    "timestamp": "2026-04-05T06:14:42Z",
+    "block_hash": "45a1125d15a1eab89eb590621ec47e8c61ab08276254c7e4ebcdc9588c9c8ab9",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 38,
+    "prev_hash": "45a1125d15a1eab89eb590621ec47e8c61ab08276254c7e4ebcdc9588c9c8ab9",
+    "session_id_hash": "3630081670f2e2718446df8eab49c711",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "ca6d1f00ed7f7ea8",
+      "commitment": "0d5529c8d4c54dba447844f1026671e0c45c78033ed5cbe87d679c1372e7ebb2",
+      "nullifier": "75ef35cfab0919e77e2521376b5331af0a306e0d5b2cacfca471b4e10b5293fe",
+      "proof_data": "270195579b30a7963a3e84ad77c66bcb124788579bb99d9c7a8b8bbdccc07ecc",
+      "verified": true,
+      "timestamp": "2026-04-05T06:32:34Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "9f3d67f8abc7a979"
+    },
+    "public_metadata": {
+      "filename_hash": "641584fc72d4a6f2",
+      "row_count_bucket": "1K-10K",
+      "column_count": 21,
+      "file_hash": "48baf542b6f75a7a9a6f7cf75c0af9c0043818ab522bed816f01813391ba246f",
+      "event": "DATASET_REGISTER"
+    },
+    "timestamp": "2026-04-05T06:32:34Z",
+    "block_hash": "0769e8e74d97e724ac84b38df5d8c6d0085076755671714fd4a648991345679e",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 39,
+    "prev_hash": "0769e8e74d97e724ac84b38df5d8c6d0085076755671714fd4a648991345679e",
+    "session_id_hash": "73cee51bff449f084e74c232aafe93c4",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "0x72161e3071dd11c2f92f009c93db93d0a326a97ee1b2a35301740f1f4256d987",
+      "verified": true,
+      "commitment": "5733c3105016a32a5cdebae5cdfd1235cf0dcb4d106d9348c58298df2b53b92d",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-simulation"
+    },
+    "public_metadata": {
+      "filename": "train.csv",
+      "row_count": 9800,
+      "column_count": 18,
+      "file_hash": "29d56da77e68cc46147b5a3a0ecae7631b336e0cd7cf8d34e7054618f1ad1652"
+    },
+    "timestamp": "2026-04-06T02:48:17Z",
+    "block_hash": "867e95219ea87ab845686b19f453bf7593039caad43d34b2070d6a7a59429496",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 40,
+    "prev_hash": "867e95219ea87ab845686b19f453bf7593039caad43d34b2070d6a7a59429496",
+    "session_id_hash": "ec9d26ce7a491cbbd132179702e28829",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "0x387746ed90055f7450718f60c33554870c19fe4ec78b9cbad1a56c9e0b228bf7",
+      "verified": true,
+      "commitment": "24433c1d20a75d23c17a0302c552291727df1a8ae34d5bbe9b3426245ed37607",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-simulation"
+    },
+    "public_metadata": {
+      "filename": "train.csv",
+      "row_count": 9800,
+      "column_count": 18,
+      "file_hash": "29d56da77e68cc46147b5a3a0ecae7631b336e0cd7cf8d34e7054618f1ad1652"
+    },
+    "timestamp": "2026-04-06T02:54:46Z",
+    "block_hash": "f2a5437f58acfa7df6265e9533cfa85f439d521f3a13a28d2bd235821a00ba90",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 41,
+    "prev_hash": "f2a5437f58acfa7df6265e9533cfa85f439d521f3a13a28d2bd235821a00ba90",
+    "session_id_hash": "ec9d26ce7a491cbbd132179702e28829",
+    "event_type": "ZK_AUDIT",
+    "zk_proof": {
+      "proof_id": "0xa745f2472f3a11b52d517d702734311a4d04f2c1f2153b85d7fff51f984ca9a8",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "337583f28ce4cb93518b70f487bba054",
+      "network": "midnight-preprod"
+    },
+    "public_metadata": {
+      "audit_id": "AUDIT-AC67803F",
+      "status": "VERIFIED"
+    },
+    "timestamp": "2026-04-06T16:23:31Z",
+    "block_hash": "c48f42667294c354d6cd6ad5ca5a9078de0ac4207602403d7849ae436e48c007",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 42,
+    "prev_hash": "c48f42667294c354d6cd6ad5ca5a9078de0ac4207602403d7849ae436e48c007",
+    "session_id_hash": "ec9d26ce7a491cbbd132179702e28829",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "0x65f48a29294e8f638eb51d67ebe6a6b0f61aa21845b07d70ea27e941e79123be",
+      "verified": true,
+      "commitment": "24433c1d20a75d23c17a0302c552291727df1a8ae34d5bbe9b3426245ed37607",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-preprod"
+    },
+    "public_metadata": {
+      "filename": "train.csv",
+      "row_count": 9800,
+      "column_count": 18,
+      "file_hash": "29d56da77e68cc46147b5a3a0ecae7631b336e0cd7cf8d34e7054618f1ad1652"
+    },
+    "timestamp": "2026-04-07T02:45:34Z",
+    "block_hash": "786846a43eadea33aa07ce2a656b5cb3a93f2de2140ae45b77ad10f920ed4122",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 43,
+    "prev_hash": "786846a43eadea33aa07ce2a656b5cb3a93f2de2140ae45b77ad10f920ed4122",
+    "session_id_hash": "ec9d26ce7a491cbbd132179702e28829",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "0x13b875c1b9e94dd108c38578be78aa009d8cc0adecd263def43a48565a5de746",
+      "verified": true,
+      "commitment": "cff60ada826e026f37b3db71ca3b92f8df700da799937a7372276afb9c68b64b",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-preprod"
+    },
+    "public_metadata": {
+      "filename": "train.csv",
+      "row_count": 9800,
+      "column_count": 18,
+      "file_hash": "56dc6a649b5c6b9c8ec89d9a431f4b5887e4dc627d63fa400a1e1aed85b1e99a"
+    },
+    "timestamp": "2026-04-07T02:56:07Z",
+    "block_hash": "af2872ae8e2982f949e932a221de9bd63d48e8a46e3e917a2e9ef2c4905893d6",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 44,
+    "prev_hash": "af2872ae8e2982f949e932a221de9bd63d48e8a46e3e917a2e9ef2c4905893d6",
+    "session_id_hash": "ec9d26ce7a491cbbd132179702e28829",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "0x1425d37f4746d23b915c3f4a198ca44695aadcfa45f9a57d0be7bd962c206b09",
+      "verified": true,
+      "commitment": "cff60ada826e026f37b3db71ca3b92f8df700da799937a7372276afb9c68b64b",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-preprod"
+    },
+    "public_metadata": {
+      "filename": "train.csv",
+      "row_count": 9800,
+      "column_count": 18,
+      "file_hash": "56dc6a649b5c6b9c8ec89d9a431f4b5887e4dc627d63fa400a1e1aed85b1e99a"
+    },
+    "timestamp": "2026-04-07T02:57:36Z",
+    "block_hash": "d8faddaf6d8ca48c295dd60c29299379cf4d5d7a800345a65eb0c928ea845313",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 45,
+    "prev_hash": "d8faddaf6d8ca48c295dd60c29299379cf4d5d7a800345a65eb0c928ea845313",
+    "session_id_hash": "ec9d26ce7a491cbbd132179702e28829",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "0x633744de7902abecb679ca26968ff086558c3c001d164bf898130326de9ee630",
+      "verified": true,
+      "commitment": "cff60ada826e026f37b3db71ca3b92f8df700da799937a7372276afb9c68b64b",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-preprod"
+    },
+    "public_metadata": {
+      "filename": "train.csv",
+      "row_count": 9800,
+      "column_count": 18,
+      "file_hash": "56dc6a649b5c6b9c8ec89d9a431f4b5887e4dc627d63fa400a1e1aed85b1e99a"
+    },
+    "timestamp": "2026-04-07T02:59:41Z",
+    "block_hash": "cc5b25b6b82c3f5c0e6dc6c95af2574400a433b16bf5e8f67a85609c7013e975",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 46,
+    "prev_hash": "cc5b25b6b82c3f5c0e6dc6c95af2574400a433b16bf5e8f67a85609c7013e975",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "0xd50bac61fbbf682cb062b794cdf32b918c61ee8b33220d9a39dc0a3624ccb8c0",
+      "verified": true,
+      "commitment": "4da2426585ccd4086867f955436b5906a71500c539dfebb3a2d04cdd42babc3d",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-preprod"
+    },
+    "public_metadata": {
+      "filename": "train.csv",
+      "row_count": 9800,
+      "column_count": 18,
+      "file_hash": "29d56da77e68cc46147b5a3a0ecae7631b336e0cd7cf8d34e7054618f1ad1652"
+    },
+    "timestamp": "2026-04-07T03:00:32Z",
+    "block_hash": "e1fe15955bb8c49bc9a0a71b6a2490fefb8cdbd9928d5fc74988680c7cd2614f",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 47,
+    "prev_hash": "e1fe15955bb8c49bc9a0a71b6a2490fefb8cdbd9928d5fc74988680c7cd2614f",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "0x3b422526345c9bc91a03dd3d0b1dc54dc3e9f14ee9c7fc14a2a9e5f7d13c8cc1",
+      "verified": true,
+      "commitment": "4da2426585ccd4086867f955436b5906a71500c539dfebb3a2d04cdd42babc3d",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-preprod"
+    },
+    "public_metadata": {
+      "filename": "train.csv",
+      "row_count": 9800,
+      "column_count": 18,
+      "file_hash": "29d56da77e68cc46147b5a3a0ecae7631b336e0cd7cf8d34e7054618f1ad1652"
+    },
+    "timestamp": "2026-04-07T03:00:56Z",
+    "block_hash": "55845086c24dee5cfc0edc2ba8ec3e0208aaa47f42622c7fbff6286e79ee82a4",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 48,
+    "prev_hash": "55845086c24dee5cfc0edc2ba8ec3e0208aaa47f42622c7fbff6286e79ee82a4",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "FINGERPRINT",
+    "zk_proof": {
+      "proof_id": "0x1c2d357b37436794a14fdc1f4485715986d539e1caaa032b465c47289bcfe395",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "37afcd39a841af8cf9e5bf5763a807e1",
+      "network": "midnight-preprod"
+    },
+    "public_metadata": {
+      "fingerprint_id": "eace11da-be45-4a",
+      "data_category": "financial",
+      "row_count": "1K\u201310K",
+      "column_count": 18,
+      "column_hashes": [
+        "ceecee0467d0",
+        "4a9fc0281db1",
+        "a2175c2cdf69",
+        "d0904faa5ed4",
+        "782af2f0612c",
+        "6d47a68eee8d",
+        "bcf95eb621ed",
+        "33ce78d04c33",
+        "b3889ea0ce74",
+        "df12214f2ee6",
+        "cfbd8892012e",
+        "7f4d95cf24f0",
+        "57e722b9e838",
+        "9c6ccceb8052",
+        "eed7c09cdda3",
+        "a0e6382eec6d",
+        "10261d2b34e2",
+        "b89baa321dc0"
+      ],
+      "is_public": false
+    },
+    "timestamp": "2026-04-07T03:01:01Z",
+    "block_hash": "6d5402b956cf61d4d51dc579a4489f09d2daca231cb0bdd9d25bf65377e54d5f",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 49,
+    "prev_hash": "6d5402b956cf61d4d51dc579a4489f09d2daca231cb0bdd9d25bf65377e54d5f",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "ZK_AUDIT",
+    "zk_proof": {
+      "proof_id": "0xa970a35505bc3c8c8b54e52948998a4fb5ad5d8fd7767bc6e09e368fe22704d6",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "37afcd39a841af8cf9e5bf5763a807e1",
+      "network": "midnight-preprod"
+    },
+    "public_metadata": {
+      "audit_id": "AUDIT-57964F65",
+      "status": "VERIFIED"
+    },
+    "timestamp": "2026-04-07T03:01:16Z",
+    "block_hash": "5d7bc819413306e8c222069cb01c6f80b7f0d639646ae9040006927f534e988e",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 50,
+    "prev_hash": "5d7bc819413306e8c222069cb01c6f80b7f0d639646ae9040006927f534e988e",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "MARKETPLACE_LIST",
+    "zk_proof": {
+      "proof_id": "0x262d6816176c38f6f76849bde42c2ea9310e5cad4d319c7886740a36c0a51be4",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "37afcd39a841af8cf9e5bf5763a807e1",
+      "network": "midnight-preprod"
+    },
+    "public_metadata": {
+      "listing_id": "0c16328d-e100-4b",
+      "fingerprint_id": "eace11da-be45-4a",
+      "data_category": "financial",
+      "row_count_range": "1K\u201310K"
+    },
+    "timestamp": "2026-04-07T03:01:37Z",
+    "block_hash": "da69840f1c2463d7d298621c36f287535b73d11d0edcf5e9b90c3bd68933009e",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 51,
+    "prev_hash": "da69840f1c2463d7d298621c36f287535b73d11d0edcf5e9b90c3bd68933009e",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "MARKETPLACE_LIST",
+    "zk_proof": {
+      "proof_id": "0x77e37dbf2b57f1cbcd5fd4339866a389f92149c8ab07e491f063280a85679fc5",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "37afcd39a841af8cf9e5bf5763a807e1",
+      "network": "midnight-preprod"
+    },
+    "public_metadata": {
+      "listing_id": "b67a1786-9fe1-40",
+      "fingerprint_id": "4da2426585ccd4086867f955436b5906a71500c539dfebb3a2d04cdd42babc3d",
+      "data_category": "train.csv",
+      "row_count_range": 9800
+    },
+    "timestamp": "2026-04-07T03:01:42Z",
+    "block_hash": "9dffdc80621f055e83b163358e60ac9eac77cdffc3febf26d5dc7fe84536be89",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 52,
+    "prev_hash": "9dffdc80621f055e83b163358e60ac9eac77cdffc3febf26d5dc7fe84536be89",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "BOUNTY_CREATE",
+    "zk_proof": {
+      "proof_id": "0x97252c95faa49420bab04d4832df64e0b289f63368680c30a279cdec6f21030c",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "37afcd39a841af8cf9e5bf5763a807e1",
+      "network": "midnight-preprod"
+    },
+    "public_metadata": {
+      "bounty_id": "bounty-baae5aeb-21f",
+      "reward_dust": 50,
+      "description": "I need x data for my shop",
+      "required_similarity_score": 0.9,
+      "target_category": "financial",
+      "target_column_count": 18,
+      "status": "open",
+      "created_at": "2026-04-07T08:32:12.755464"
+    },
+    "timestamp": "2026-04-07T03:02:12Z",
+    "block_hash": "36f33e81a074f01321268886701542045c7c12a5133839a183a4c5cc9915e370",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 53,
+    "prev_hash": "36f33e81a074f01321268886701542045c7c12a5133839a183a4c5cc9915e370",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "BOUNTY_CLAIM",
+    "zk_proof": {
+      "proof_id": "0x3bce77535b9f3d5edb8be844ec2eb0cdc7b1a9119703178cccb5298645bd42cd",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "37afcd39a841af8cf9e5bf5763a807e1",
+      "network": "midnight-preprod"
+    },
+    "public_metadata": {
+      "bounty_id": "bounty-baae5aeb-21f",
+      "fingerprint_id": "4da2426585ccd4086867f955436b5906a71500c539dfebb3a2d04cdd42babc3d",
+      "success": false,
+      "similarity": 0.85
+    },
+    "timestamp": "2026-04-07T03:02:51Z",
+    "block_hash": "c293051195bad5d7618beefbe04f091a853f084a0238e39bcb97b84def1cd471",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 54,
+    "prev_hash": "c293051195bad5d7618beefbe04f091a853f084a0238e39bcb97b84def1cd471",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "ATTESTATION_ISSUED",
+    "zk_proof": {
+      "proof_id": "0xbd926c9204e4e52393a3a807fd91f89a9f9bc378ffbf873cc0a68adf63230854",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "37afcd39a841af8cf9e5bf5763a807e1",
+      "network": "midnight-preprod"
+    },
+    "public_metadata": {
+      "credential_id": "vc-048e0c5a-0e8",
+      "fingerprint_id": "4da2426585ccd4086867f955436b5906a71500c539dfebb3a2d04cdd42babc3d",
+      "issuer_id": "NexusAIData_Compliance_Oracle",
+      "claim_type": "NO_PII",
+      "issued_at": "2026-04-07T08:32:59.311260",
+      "valid": true
+    },
+    "timestamp": "2026-04-07T03:02:59Z",
+    "block_hash": "61454ee2408675fac87d344db7bfcc8d51fe3576237d0cd25d966d61bf7f3af3",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 55,
+    "prev_hash": "61454ee2408675fac87d344db7bfcc8d51fe3576237d0cd25d966d61bf7f3af3",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "BOUNTY_CREATE",
+    "zk_proof": {
+      "proof_id": "0xc7b697ee35608fd33e47ec03e9c7f52afabdfe5ca01fbe837bc2a6aa607614d4",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "37afcd39a841af8cf9e5bf5763a807e1",
+      "network": "midnight-preprod"
+    },
+    "public_metadata": {
+      "bounty_id": "bounty-040bd459-324",
+      "reward_dust": 50,
+      "description": "More data",
+      "required_similarity_score": 0.8,
+      "target_category": "train.csv",
+      "target_column_count": 18,
+      "status": "open",
+      "created_at": "2026-04-07T08:37:18.083197"
+    },
+    "timestamp": "2026-04-07T03:07:18Z",
+    "block_hash": "80e5345e09728643db2042e78851b5c9ac9e78092caca0ab3380d2146fa6e1cc",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 56,
+    "prev_hash": "80e5345e09728643db2042e78851b5c9ac9e78092caca0ab3380d2146fa6e1cc",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "BOUNTY_CLAIM",
+    "zk_proof": {
+      "proof_id": "0x2176a6095acc8df536e4594a7080abce3a1ca31ef3b62212d33f90f56cca96c2",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "37afcd39a841af8cf9e5bf5763a807e1",
+      "network": "midnight-preprod"
+    },
+    "public_metadata": {
+      "bounty_id": "bounty-baae5aeb-21f",
+      "fingerprint_id": "4da2426585ccd4086867f955436b5906a71500c539dfebb3a2d04cdd42babc3d",
+      "success": false,
+      "similarity": 0.85
+    },
+    "timestamp": "2026-04-07T03:07:30Z",
+    "block_hash": "3733e881263a005fbdcd25fc3cf82821c8cc2a87f144bf0a1ce3ba5464682d19",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 57,
+    "prev_hash": "3733e881263a005fbdcd25fc3cf82821c8cc2a87f144bf0a1ce3ba5464682d19",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "BOUNTY_CLAIM",
+    "zk_proof": {
+      "proof_id": "0xddfa37cf59aa8dd5b62f234cb77f19702fef941ebcf671119b2797d1af0a9869",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "37afcd39a841af8cf9e5bf5763a807e1",
+      "network": "midnight-preprod"
+    },
+    "public_metadata": {
+      "bounty_id": "bounty-baae5aeb-21f",
+      "fingerprint_id": "4da2426585ccd4086867f955436b5906a71500c539dfebb3a2d04cdd42babc3d",
+      "success": false,
+      "similarity": 0.75
+    },
+    "timestamp": "2026-04-07T03:41:35Z",
+    "block_hash": "9cc54ba00b886dfb9070a236976da278b3ee2a21d602c9259d0c0cb95c7a4a42",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 58,
+    "prev_hash": "9cc54ba00b886dfb9070a236976da278b3ee2a21d602c9259d0c0cb95c7a4a42",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "BOUNTY_CLAIM",
+    "zk_proof": {
+      "proof_id": "0x2fcb292369cfe0553cc8f7f17e5be71e49f4df7e3f3a658d9eab7f53a302b969",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "37afcd39a841af8cf9e5bf5763a807e1",
+      "network": "midnight-preprod"
+    },
+    "public_metadata": {
+      "bounty_id": "bounty-baae5aeb-21f",
+      "fingerprint_id": "4da2426585ccd4086867f955436b5906a71500c539dfebb3a2d04cdd42babc3d",
+      "success": false,
+      "similarity": 0.75
+    },
+    "timestamp": "2026-04-07T03:53:02Z",
+    "block_hash": "d7769bc69290a909180ab7437c3bac3675bbae64341a5dee0b5a3d704b4d16a1",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 59,
+    "prev_hash": "d7769bc69290a909180ab7437c3bac3675bbae64341a5dee0b5a3d704b4d16a1",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "0x9e041fe88043d5b561cffb535323eefa28b4dc2c0b06b96362c0b028d2e55331",
+      "verified": true,
+      "commitment": "4da2426585ccd4086867f955436b5906a71500c539dfebb3a2d04cdd42babc3d",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-preprod"
+    },
+    "public_metadata": {
+      "filename": "train.csv",
+      "row_count": 9800,
+      "column_count": 18,
+      "file_hash": "29d56da77e68cc46147b5a3a0ecae7631b336e0cd7cf8d34e7054618f1ad1652"
+    },
+    "timestamp": "2026-04-07T03:54:32Z",
+    "block_hash": "22223eb46d50147c1d2d7b73ffa937dc578ddf6411d2e2b1cbe14eb62e41b54c",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 60,
+    "prev_hash": "22223eb46d50147c1d2d7b73ffa937dc578ddf6411d2e2b1cbe14eb62e41b54c",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "FINGERPRINT",
+    "zk_proof": {
+      "proof_id": "0x9e86df660a8d9aae31e6eb0046de45fb0b79d83c35b6dee9c74a5f3f52ed9408",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "37afcd39a841af8cf9e5bf5763a807e1",
+      "network": "midnight-preprod"
+    },
+    "public_metadata": {
+      "fingerprint_id": "ece0385c-8ceb-46",
+      "data_category": "financial",
+      "row_count": "1K\u201310K",
+      "column_count": 18,
+      "column_hashes": [
+        "ceecee0467d0",
+        "4a9fc0281db1",
+        "a2175c2cdf69",
+        "d0904faa5ed4",
+        "782af2f0612c",
+        "6d47a68eee8d",
+        "bcf95eb621ed",
+        "33ce78d04c33",
+        "b3889ea0ce74",
+        "df12214f2ee6",
+        "cfbd8892012e",
+        "7f4d95cf24f0",
+        "57e722b9e838",
+        "9c6ccceb8052",
+        "eed7c09cdda3",
+        "a0e6382eec6d",
+        "10261d2b34e2",
+        "b89baa321dc0"
+      ],
+      "is_public": false
+    },
+    "timestamp": "2026-04-07T04:04:50Z",
+    "block_hash": "1e9739b7236749456ab8222389550f5a98fdbdc0f5fd3bff04166775cceda77d",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 61,
+    "prev_hash": "1e9739b7236749456ab8222389550f5a98fdbdc0f5fd3bff04166775cceda77d",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "0x01a63fd33c71f288d3f69091b2cd5ff2d61f4b3f070a2317a71feef1a2ded538",
+      "verified": true,
+      "commitment": "4da2426585ccd4086867f955436b5906a71500c539dfebb3a2d04cdd42babc3d",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-preprod"
+    },
+    "public_metadata": {
+      "filename": "train.csv",
+      "row_count": 9800,
+      "column_count": 18,
+      "file_hash": "29d56da77e68cc46147b5a3a0ecae7631b336e0cd7cf8d34e7054618f1ad1652"
+    },
+    "timestamp": "2026-04-07T04:07:30Z",
+    "block_hash": "bc60ac63345301c967388d022a30463419564a5664d19b4be9d9e50a5a56308d",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 62,
+    "prev_hash": "bc60ac63345301c967388d022a30463419564a5664d19b4be9d9e50a5a56308d",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "FINGERPRINT",
+    "zk_proof": {
+      "proof_id": "0xf0d8e36d090c507b59fab3cfb058a95456eaaee576a70249c7a877b0d4e185f4",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "37afcd39a841af8cf9e5bf5763a807e1",
+      "network": "midnight-preprod"
+    },
+    "public_metadata": {
+      "fingerprint_id": "46daf815-2ab2-47",
+      "data_category": "financial",
+      "row_count": "1K\u201310K",
+      "column_count": 18,
+      "column_hashes": [
+        "ceecee0467d0",
+        "4a9fc0281db1",
+        "a2175c2cdf69",
+        "d0904faa5ed4",
+        "782af2f0612c",
+        "6d47a68eee8d",
+        "bcf95eb621ed",
+        "33ce78d04c33",
+        "b3889ea0ce74",
+        "df12214f2ee6",
+        "cfbd8892012e",
+        "7f4d95cf24f0",
+        "57e722b9e838",
+        "9c6ccceb8052",
+        "eed7c09cdda3",
+        "a0e6382eec6d",
+        "10261d2b34e2",
+        "b89baa321dc0"
+      ],
+      "is_public": false
+    },
+    "timestamp": "2026-04-07T04:09:57Z",
+    "block_hash": "08a0de8c7e9ff94507e1d5a258a94709bbef261dded2508a72a331cf7012aeee",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 63,
+    "prev_hash": "08a0de8c7e9ff94507e1d5a258a94709bbef261dded2508a72a331cf7012aeee",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "0xbf29a0e7bedc963fca9dc937b64b6b88fff148682970c6dc95b8e97c27ba70e4",
+      "verified": true,
+      "commitment": "4da2426585ccd4086867f955436b5906a71500c539dfebb3a2d04cdd42babc3d",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-preprod"
+    },
+    "public_metadata": {
+      "filename": "train.csv",
+      "row_count": 9800,
+      "column_count": 18,
+      "file_hash": "29d56da77e68cc46147b5a3a0ecae7631b336e0cd7cf8d34e7054618f1ad1652"
+    },
+    "timestamp": "2026-04-07T04:10:06Z",
+    "block_hash": "82a5d235e6c4a0bbd4bbda4a61e6ea3eb40364d617c4ec715a054b12c3a2ef25",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 64,
+    "prev_hash": "82a5d235e6c4a0bbd4bbda4a61e6ea3eb40364d617c4ec715a054b12c3a2ef25",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "f70010543f869069",
+      "commitment": "976cdca5bedd7b05604d1e89c97caee344d82a4d5ebfe9673fb2dcbe16c84fa9",
+      "nullifier": "6be67d2977c2ceb6673e224050e50388afb505b62933daa4495af20f1515afbb",
+      "proof_data": "8b9417912a9e4d0c29031868490c04093c6f12097b58f4b873e0304f33b8a025",
+      "verified": true,
+      "timestamp": "2026-04-07T04:49:35Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "349c3f756f16fbe3"
+    },
+    "public_metadata": {
+      "filename_hash": "eba6f1d5dc4e384d",
+      "row_count_bucket": "1K-10K",
+      "column_count": 18,
+      "file_hash": "29d56da77e68cc46147b5a3a0ecae7631b336e0cd7cf8d34e7054618f1ad1652",
+      "event": "DATASET_REGISTER"
+    },
+    "timestamp": "2026-04-07T04:49:35Z",
+    "block_hash": "a02d7328e1cacc963549c1aeb2a1c8738c1dfc6df594325e06479ed0c9b41126",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 65,
+    "prev_hash": "a02d7328e1cacc963549c1aeb2a1c8738c1dfc6df594325e06479ed0c9b41126",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "PROVENANCE_COMMIT",
+    "zk_proof": {
+      "proof_id": "3f415ae4dd115930",
+      "commitment": "51b877f36dd0e72085917259257087f7f413f978bbfb9f777cf76999974426cc",
+      "nullifier": "02c8d73c80eb6fbf566df04bbcb928cd516b3f5cb7941644e1143f3178d4e62f",
+      "proof_data": "200520efd79fb279bf996b7d4fb9d23022bb55c44f837ac4728378bbedc2f46b",
+      "verified": true,
+      "timestamp": "2026-04-07T05:31:36Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "54f1e3e843cce247"
+    },
+    "public_metadata": {
+      "commit_id": "CMT-AD073CE7DB3C",
+      "parent_id": "CMT-ROOT-cacc",
+      "child_hash_commit": "7aec84d52ff069fa...",
+      "operation_hash": "e6263bbf09dfbcda0199a019fcf1631b441068b94338e07f27315d562f6d3570",
+      "is_root": false
+    },
+    "timestamp": "2026-04-07T05:31:36Z",
+    "block_hash": "878d262ac8c1554b36cb01997af2c790c93b235eefd3ff29d692decb462f6680",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 66,
+    "prev_hash": "878d262ac8c1554b36cb01997af2c790c93b235eefd3ff29d692decb462f6680",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "PROVENANCE_COMMIT",
+    "zk_proof": {
+      "proof_id": "8d01f470b8ecfda4",
+      "commitment": "45edddab83c0f8dae9b273a65dcf7854a7419371644a4aad750b27f729139989",
+      "nullifier": "39b4b369ea3356be1dc505beb7fa133f3aca6063e2de9d68107d89d4133a1356",
+      "proof_data": "c737307d492702ed2e22676d531d14dabaf24a0938fbf61b501f53c20a3e0862",
+      "verified": true,
+      "timestamp": "2026-04-07T05:31:38Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "d71236701fb73bb8"
+    },
+    "public_metadata": {
+      "commit_id": "CMT-25DEC755D012",
+      "parent_id": "CMT-AD073CE7DB3C",
+      "child_hash_commit": "a45844ce865681ad...",
+      "operation_hash": "4973700daff1afe6cbe1380785e4d7a343563c8d1a000d2dc0ab3c5e6b094152",
+      "is_root": false
+    },
+    "timestamp": "2026-04-07T05:31:38Z",
+    "block_hash": "9cefcc9fcea403d0616b39a1a1b2a4196cd1e619605aa7c9453901ea03b38469",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 67,
+    "prev_hash": "9cefcc9fcea403d0616b39a1a1b2a4196cd1e619605aa7c9453901ea03b38469",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "PROVENANCE_COMMIT",
+    "zk_proof": {
+      "proof_id": "68a97c368d91f82f",
+      "commitment": "71399df8748a0e4978db4cbfaf5a7535a0c197fe60ff0b1df88bd9ce60f0bbbe",
+      "nullifier": "6957b8ecbed92ca8e6b2b40a66ba355aaa4957d23756e2cd5ada50b2bbdfc43f",
+      "proof_data": "7a065f1a801439e341a9788d113bcd9bed970bd0be4693065dc7914d843db945",
+      "verified": true,
+      "timestamp": "2026-04-07T05:31:40Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "773b412337edb75a"
+    },
+    "public_metadata": {
+      "commit_id": "CMT-14BA681D1A4D",
+      "parent_id": "CMT-25DEC755D012",
+      "child_hash_commit": "2edb1f61df9dfa7a...",
+      "operation_hash": "e6263bbf09dfbcda0199a019fcf1631b441068b94338e07f27315d562f6d3570",
+      "is_root": false
+    },
+    "timestamp": "2026-04-07T05:31:40Z",
+    "block_hash": "65845c6114edf7aa397b502a77b90d6250533c454ee53fa7e5e4b8a0522af5d2",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 68,
+    "prev_hash": "65845c6114edf7aa397b502a77b90d6250533c454ee53fa7e5e4b8a0522af5d2",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "PROVENANCE_COMMIT",
+    "zk_proof": {
+      "proof_id": "f58cc31d70b5be57",
+      "commitment": "88d7932d0f729bdbdbee08a477dd5b531d6d094ecc6aba4c9dde4aa1e944bd4f",
+      "nullifier": "afc245d01e3e3afba3e43b35c88b8164f0d5dff4b105465e81420b73d7cac261",
+      "proof_data": "e4a11eb04537c070010f454f0b495b08eb92d53efc5ddb5e9f033e0887d16a2c",
+      "verified": true,
+      "timestamp": "2026-04-07T05:31:41Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "a2719d155f7d9731"
+    },
+    "public_metadata": {
+      "commit_id": "CMT-65A389E97AEA",
+      "parent_id": "CMT-14BA681D1A4D",
+      "child_hash_commit": "4dedd570a5518592...",
+      "operation_hash": "e6263bbf09dfbcda0199a019fcf1631b441068b94338e07f27315d562f6d3570",
+      "is_root": false
+    },
+    "timestamp": "2026-04-07T05:31:41Z",
+    "block_hash": "c2b1780f31d0f221a5b5fdf7cfd904e6bbfe1f0cc970e5746e6f24c8dcaf4052",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 69,
+    "prev_hash": "c2b1780f31d0f221a5b5fdf7cfd904e6bbfe1f0cc970e5746e6f24c8dcaf4052",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "PROVENANCE_COMMIT",
+    "zk_proof": {
+      "proof_id": "8f846291eb823047",
+      "commitment": "0c48e32f5cf00a87a961570ebeff1e5eafdb16fa6a18d6ffe9cf8d13ea56116c",
+      "nullifier": "8b33a164bde38ff6b4557463a5760ba778214eeec569c8299278c159071bee55",
+      "proof_data": "48ca660c0b180d00df71f465c8a31b45922936f42ba6187e63b4cf6da235c2a6",
+      "verified": true,
+      "timestamp": "2026-04-07T05:32:23Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "3d931691be605317"
+    },
+    "public_metadata": {
+      "commit_id": "CMT-6DADD1AC186D",
+      "parent_id": "CMT-ROOT-cacc",
+      "child_hash_commit": "fd735cd1b3623708...",
+      "operation_hash": "e6263bbf09dfbcda0199a019fcf1631b441068b94338e07f27315d562f6d3570",
+      "is_root": false
+    },
+    "timestamp": "2026-04-07T05:32:23Z",
+    "block_hash": "50c030dfe60df48892e9f2644a099ea7b6d4c7a00012e633852c7a3708d0a5ee",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 70,
+    "prev_hash": "50c030dfe60df48892e9f2644a099ea7b6d4c7a00012e633852c7a3708d0a5ee",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "PROVENANCE_COMMIT",
+    "zk_proof": {
+      "proof_id": "8d7c9d0dffd95ff6",
+      "commitment": "044bea4ca2fbb923d31b6b280eab5ac188d2fa0ff5a5f289e1960793887654d0",
+      "nullifier": "688109008f20aaf83cf67463c556b8528619308e937401e8cd93208701f921fe",
+      "proof_data": "cee476e5d3c35ca0fece1a695cef27a6760a1e059e3c8854fca3eb53ad755e26",
+      "verified": true,
+      "timestamp": "2026-04-07T05:32:26Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "67bd6cf4be52ad81"
+    },
+    "public_metadata": {
+      "commit_id": "CMT-522022AEE432",
+      "parent_id": "CMT-6DADD1AC186D",
+      "child_hash_commit": "cbf8aa3cd8221c65...",
+      "operation_hash": "e6263bbf09dfbcda0199a019fcf1631b441068b94338e07f27315d562f6d3570",
+      "is_root": false
+    },
+    "timestamp": "2026-04-07T05:32:26Z",
+    "block_hash": "d39b8f19877cc00611cc8ec91f9c7275515679c2a44b244f5b5b96f2d576ab73",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 71,
+    "prev_hash": "d39b8f19877cc00611cc8ec91f9c7275515679c2a44b244f5b5b96f2d576ab73",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "PROVENANCE_COMMIT",
+    "zk_proof": {
+      "proof_id": "7d938a0b65705b47",
+      "commitment": "2a2d37474ecf5895695c93e11422b99d2368bd49d6dd9e4c0c49a5316a987527",
+      "nullifier": "d0bb45fe86da1deca66f9ee13324615e9a0f9cab53414ea8c67f8261e2e450b2",
+      "proof_data": "9177ca375e1b56a05367cd77608d6d4595dbf57e7f7309613330de727e193f01",
+      "verified": true,
+      "timestamp": "2026-04-07T05:32:28Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "ce2f2a489bb5385c"
+    },
+    "public_metadata": {
+      "commit_id": "CMT-12A7B1F1E8DA",
+      "parent_id": "CMT-522022AEE432",
+      "child_hash_commit": "5e49940868ac4b2c...",
+      "operation_hash": "e6263bbf09dfbcda0199a019fcf1631b441068b94338e07f27315d562f6d3570",
+      "is_root": false
+    },
+    "timestamp": "2026-04-07T05:32:28Z",
+    "block_hash": "c543df24e98cef2f5f57d110009c2168dc81224b39f39088d46f51bb17fa3419",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 72,
+    "prev_hash": "c543df24e98cef2f5f57d110009c2168dc81224b39f39088d46f51bb17fa3419",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "PROVENANCE_COMMIT",
+    "zk_proof": {
+      "proof_id": "d7def08499c1053d",
+      "commitment": "086bf65da94fd99cfbfa6380719f038d3423fcb202f4104118536b343db0639e",
+      "nullifier": "8c522009351b246dda41c1cf118d5c8fe8f3099f5320e27bcdb71631df850aa7",
+      "proof_data": "014d019c20b2d1dd428418bcd40c2fb884eba8ff9b2df454fa20b6391973fe3a",
+      "verified": true,
+      "timestamp": "2026-04-07T05:32:30Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "2165a54c88c663a8"
+    },
+    "public_metadata": {
+      "commit_id": "CMT-96C15F32C1D7",
+      "parent_id": "CMT-12A7B1F1E8DA",
+      "child_hash_commit": "2de835fa4879d7da...",
+      "operation_hash": "4973700daff1afe6cbe1380785e4d7a343563c8d1a000d2dc0ab3c5e6b094152",
+      "is_root": false
+    },
+    "timestamp": "2026-04-07T05:32:30Z",
+    "block_hash": "66ff6fecdd43a9d50f03d9adebf4b246b33d9841a2d7d84e7d1a3c287522bc80",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 73,
+    "prev_hash": "66ff6fecdd43a9d50f03d9adebf4b246b33d9841a2d7d84e7d1a3c287522bc80",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "SUBSCRIPTION_CREATE",
+    "zk_proof": {
+      "proof_id": "0x6147042826cd7d9cc016f54b4eb83b9adfb17b1cbb96161a60b406c71f2d2b9d",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "subscription_id": "cda19b50a3aba36adccac19a7556d262",
+      "target_fingerprint": "eace11da-be45-4a",
+      "payment_dust": 100,
+      "status": "LOCKED"
+    },
+    "timestamp": "2026-04-07T05:36:27Z",
+    "block_hash": "bd31c5fdcc63b2902440333f9f5ec2d6c3cde26b94f7f23ce2448bc6b9275ff2",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 74,
+    "prev_hash": "bd31c5fdcc63b2902440333f9f5ec2d6c3cde26b94f7f23ce2448bc6b9275ff2",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "SUBSCRIPTION_CREATE",
+    "zk_proof": {
+      "proof_id": "0xffd96f63f386257b2c63817dc9464697cdc4f23af9ec15b368fb627344ef8799",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "subscription_id": "d94c439e45e0e9ba69d31d2373469bfa",
+      "target_fingerprint": "4da2426585ccd4086867f955436b5906a71500c539dfebb3a2d04cdd42babc3d",
+      "payment_dust": 100,
+      "status": "LOCKED"
+    },
+    "timestamp": "2026-04-07T05:36:37Z",
+    "block_hash": "2f68159f666cb8e1420404bbe3767e6fd0aae37cc773dd329ba704b83672d51c",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 75,
+    "prev_hash": "2f68159f666cb8e1420404bbe3767e6fd0aae37cc773dd329ba704b83672d51c",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "SUBSCRIPTION_CREATE",
+    "zk_proof": {
+      "proof_id": "0x0ada24c03608c1de25eb74af166d448324cdf2e8471b2c06e9f32d708bb2944d",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "subscription_id": "d94c439e45e0e9ba69d31d2373469bfa",
+      "target_fingerprint": "4da2426585ccd4086867f955436b5906a71500c539dfebb3a2d04cdd42babc3d",
+      "payment_dust": 100,
+      "status": "LOCKED"
+    },
+    "timestamp": "2026-04-07T05:36:38Z",
+    "block_hash": "c8d5616558096f7994137f7114ce7e97cdb70515d8321e482a568c99cc588f18",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 76,
+    "prev_hash": "c8d5616558096f7994137f7114ce7e97cdb70515d8321e482a568c99cc588f18",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "SUBSCRIPTION_CREATE",
+    "zk_proof": {
+      "proof_id": "0xb02eeab98b6c51192db49cdcddd3e9c48be005d48ea240e50253c458b586eaf3",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "subscription_id": "d94c439e45e0e9ba69d31d2373469bfa",
+      "target_fingerprint": "4da2426585ccd4086867f955436b5906a71500c539dfebb3a2d04cdd42babc3d",
+      "payment_dust": 100,
+      "status": "LOCKED"
+    },
+    "timestamp": "2026-04-07T05:36:38Z",
+    "block_hash": "38aabbeb8f706badcd227353b4835407361b617ba19fd2472183ecfc5666bfca",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 77,
+    "prev_hash": "38aabbeb8f706badcd227353b4835407361b617ba19fd2472183ecfc5666bfca",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "SUBSCRIPTION_CREATE",
+    "zk_proof": {
+      "proof_id": "0xb2c24aa39117a958cbd1d69245e819e1e03eb108203bee191632435ed065b310",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "subscription_id": "d94c439e45e0e9ba69d31d2373469bfa",
+      "target_fingerprint": "4da2426585ccd4086867f955436b5906a71500c539dfebb3a2d04cdd42babc3d",
+      "payment_dust": 100,
+      "status": "LOCKED"
+    },
+    "timestamp": "2026-04-07T05:36:45Z",
+    "block_hash": "f1c8e1f0b983de49a8d790ee884209bd6fa30a525510c4539efb3d49465b670d",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 78,
+    "prev_hash": "f1c8e1f0b983de49a8d790ee884209bd6fa30a525510c4539efb3d49465b670d",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "SUBSCRIPTION_CREATE",
+    "zk_proof": {
+      "proof_id": "0xec5359c9f27abb43f774b993ac680b8b99c6408cbc6fdadf4c7bbf3b9cfd17c6",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "subscription_id": "d94c439e45e0e9ba69d31d2373469bfa",
+      "target_fingerprint": "4da2426585ccd4086867f955436b5906a71500c539dfebb3a2d04cdd42babc3d",
+      "payment_dust": 100,
+      "status": "LOCKED"
+    },
+    "timestamp": "2026-04-07T05:36:46Z",
+    "block_hash": "837422e381faab7b9a3c4203eba6ca6672e098e997a8bbe657e94d473893882d",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 79,
+    "prev_hash": "837422e381faab7b9a3c4203eba6ca6672e098e997a8bbe657e94d473893882d",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "SUBSCRIPTION_CREATE",
+    "zk_proof": {
+      "proof_id": "0xf5f4eb531a645de8896dac981d92d280b06e8b2a90ea33d6404dc2e0931bcd7c",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "subscription_id": "d94c439e45e0e9ba69d31d2373469bfa",
+      "target_fingerprint": "4da2426585ccd4086867f955436b5906a71500c539dfebb3a2d04cdd42babc3d",
+      "payment_dust": 100,
+      "status": "LOCKED"
+    },
+    "timestamp": "2026-04-07T05:36:46Z",
+    "block_hash": "cf5ad151f2c3e1347c0740d0b22aab4117e5f753e4dc73d14b178b077f946356",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 80,
+    "prev_hash": "cf5ad151f2c3e1347c0740d0b22aab4117e5f753e4dc73d14b178b077f946356",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "SUBSCRIPTION_CREATE",
+    "zk_proof": {
+      "proof_id": "0x8bee61202d29228cc8dede52024022298be8062c792dbbcc803cc26f8e972f37",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "subscription_id": "d94c439e45e0e9ba69d31d2373469bfa",
+      "target_fingerprint": "4da2426585ccd4086867f955436b5906a71500c539dfebb3a2d04cdd42babc3d",
+      "payment_dust": 100,
+      "status": "LOCKED"
+    },
+    "timestamp": "2026-04-07T05:36:46Z",
+    "block_hash": "c3a40415e743a082d8a80649f6934ff890e004ce45822397b2861869ab9dbead",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 81,
+    "prev_hash": "c3a40415e743a082d8a80649f6934ff890e004ce45822397b2861869ab9dbead",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "SUBSCRIPTION_CREATE",
+    "zk_proof": {
+      "proof_id": "0xb37e685397508906911c2ed8d4a11c95dc74f8641dfb893d780edaf9051db829",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "subscription_id": "d94c439e45e0e9ba69d31d2373469bfa",
+      "target_fingerprint": "4da2426585ccd4086867f955436b5906a71500c539dfebb3a2d04cdd42babc3d",
+      "payment_dust": 100,
+      "status": "LOCKED"
+    },
+    "timestamp": "2026-04-07T05:36:47Z",
+    "block_hash": "5794413960fe0c5da790c0283e5a8b999e6976f54c3b8d539d86f0cd77b9564d",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 82,
+    "prev_hash": "5794413960fe0c5da790c0283e5a8b999e6976f54c3b8d539d86f0cd77b9564d",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "SUBSCRIPTION_CREATE",
+    "zk_proof": {
+      "proof_id": "0x5087037730c49c007c7a3366325e0a37eac4cae3c4d37f9a1ff82fa1bda8dd24",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "subscription_id": "d94c439e45e0e9ba69d31d2373469bfa",
+      "target_fingerprint": "4da2426585ccd4086867f955436b5906a71500c539dfebb3a2d04cdd42babc3d",
+      "payment_dust": 100,
+      "status": "LOCKED"
+    },
+    "timestamp": "2026-04-07T05:36:47Z",
+    "block_hash": "cff83490f51c4bd0d5525d6482489b81101b3e93e7f57595e872000a6708924e",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 83,
+    "prev_hash": "cff83490f51c4bd0d5525d6482489b81101b3e93e7f57595e872000a6708924e",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "ATTESTATION_ISSUED",
+    "zk_proof": {
+      "proof_id": "0xd744e5a1791e62d201e361e4b0f449d73fe9789e2a2cee21a068e131c931a7bf",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "37afcd39a841af8cf9e5bf5763a807e1",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "credential_id": "vc-4984ca52-d6e",
+      "fingerprint_id": "eace11da-be45-4a",
+      "issuer_id": "NexusAIData_Compliance_Oracle",
+      "claim_type": "NO_PII",
+      "issued_at": "2026-04-07T11:08:53.809402",
+      "valid": true
+    },
+    "timestamp": "2026-04-07T05:38:53Z",
+    "block_hash": "2c2ad9a184035a0cbbc001a38c6e2bb6ab05a4cf8b9b2fd1b10d931ebfafa934",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 84,
+    "prev_hash": "2c2ad9a184035a0cbbc001a38c6e2bb6ab05a4cf8b9b2fd1b10d931ebfafa934",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "BOUNTY_CLAIM",
+    "zk_proof": {
+      "proof_id": "0xedcd65b227edd7eea1c4e2b5815105ea77d4865f5593c51f6147363163708486",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "37afcd39a841af8cf9e5bf5763a807e1",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "bounty_id": "bounty-baae5aeb-21f",
+      "fingerprint_id": "4da2426585ccd4086867f955436b5906a71500c539dfebb3a2d04cdd42babc3d",
+      "success": false,
+      "similarity": 0.5833
+    },
+    "timestamp": "2026-04-07T05:39:04Z",
+    "block_hash": "a30a8f1961c9401a1efd6322db8f7e093e8a5e87bb16740f0c310f42793e7067",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 85,
+    "prev_hash": "a30a8f1961c9401a1efd6322db8f7e093e8a5e87bb16740f0c310f42793e7067",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "BOUNTY_CLAIM",
+    "zk_proof": {
+      "proof_id": "0xbf5257ab083109e24ed283c6c95a19853fe0df0339c779f69e7407aa7e755d18",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "37afcd39a841af8cf9e5bf5763a807e1",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "bounty_id": "bounty-040bd459-324",
+      "fingerprint_id": "4da2426585ccd4086867f955436b5906a71500c539dfebb3a2d04cdd42babc3d",
+      "success": false,
+      "similarity": 0.75
+    },
+    "timestamp": "2026-04-07T05:39:08Z",
+    "block_hash": "44f9304ea35a7948344b8ae85723ea22ac374ae6b3e2583478fa78bd6639de3a",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 86,
+    "prev_hash": "44f9304ea35a7948344b8ae85723ea22ac374ae6b3e2583478fa78bd6639de3a",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "PROVENANCE_COMMIT",
+    "zk_proof": {
+      "proof_id": "7c66d96cb9eba652",
+      "verified": true,
+      "tx": "0x6dc7629dfc739508da2c9ae54f8ba5ec3748e5eae8648ef9cb06da1c72df7e1b",
+      "commitment": "f5786c742b5b9c76116ffb571bcc60ce4b8b371688c2b9f28e8b4a81d1c37114",
+      "nullifier": "1d19d70f8c6e72382d0c9454965023068a65f508e9dcc6e23bc7814a81446659",
+      "proof_data": "c308e8ff2ef8d6996d72a956d1d1376f6c68a3d16fb27fa2f4c55e3884dbcfe1",
+      "timestamp": "2026-04-07T05:39:41Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "b208cd1de29632a3"
+    },
+    "public_metadata": {
+      "commit_id": "CMT-01C9BEA19874",
+      "parent_id": "CMT-ROOT-cacc",
+      "child_hash_commit": "c75a21a14dd5aa77...",
+      "operation_hash": "4973700daff1afe6cbe1380785e4d7a343563c8d1a000d2dc0ab3c5e6b094152",
+      "is_root": false
+    },
+    "timestamp": "2026-04-07T05:39:41Z",
+    "block_hash": "e2c56ed51df29b99c56f3d1a7d7291f9da6b7b058847b9f9d91805a8610060b0",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 87,
+    "prev_hash": "e2c56ed51df29b99c56f3d1a7d7291f9da6b7b058847b9f9d91805a8610060b0",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "PROVENANCE_COMMIT",
+    "zk_proof": {
+      "proof_id": "eedb66209aad2542",
+      "verified": true,
+      "tx": "0x45e38e3faf514e8bd93df918eafa5e1df809143a9a208717cd78fb0e353608c0",
+      "commitment": "ed2b1d99188a08e7723fd2de635e6831d63b68eb96a919812ed8c63c916ade2b",
+      "nullifier": "12095ac5be86339fe5cc4228b805ea44b18119b642c4851b2659da288d1810ea",
+      "proof_data": "ca34fe14cbe6695e4e4381ec1a9b4c325594a98524fe41ef310577629a8a933b",
+      "timestamp": "2026-04-07T05:39:44Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "e727bdc59aeda8e4"
+    },
+    "public_metadata": {
+      "commit_id": "CMT-28CC1A22E437",
+      "parent_id": "CMT-01C9BEA19874",
+      "child_hash_commit": "4828bec73ff79400...",
+      "operation_hash": "e6263bbf09dfbcda0199a019fcf1631b441068b94338e07f27315d562f6d3570",
+      "is_root": false
+    },
+    "timestamp": "2026-04-07T05:39:44Z",
+    "block_hash": "c78f8ee8f3409b986e802d78f5fcad3c0d27cee4d8173a15fd7ba250f2fa98f5",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 88,
+    "prev_hash": "c78f8ee8f3409b986e802d78f5fcad3c0d27cee4d8173a15fd7ba250f2fa98f5",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "PROVENANCE_COMMIT",
+    "zk_proof": {
+      "proof_id": "2d7e2f2f1111b0e6",
+      "verified": true,
+      "tx": "0x25a42bb9b261e99828bebfe55a192e74ee0dad29ef04fbb43de019d17c3f760f",
+      "commitment": "40c2577621604c7779aafa45e8c8e0787c223241715e2ca8a3ed608965c0d9a2",
+      "nullifier": "d44e35b0b09986a5480609dc2bc63cd6a57f6b1ce472eb6d9b98c7b4eb455e9b",
+      "proof_data": "cc6b9786723277a8b30447d855f710e66af3c9628195341482a1d4c0c05b852c",
+      "timestamp": "2026-04-07T05:39:45Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "a71206b3e0d180f3"
+    },
+    "public_metadata": {
+      "commit_id": "CMT-30A5763E9F9B",
+      "parent_id": "CMT-28CC1A22E437",
+      "child_hash_commit": "2fdaed1800937416...",
+      "operation_hash": "4973700daff1afe6cbe1380785e4d7a343563c8d1a000d2dc0ab3c5e6b094152",
+      "is_root": false
+    },
+    "timestamp": "2026-04-07T05:39:45Z",
+    "block_hash": "b94de9ba6b2e5e2009b69f160182de02ffbcb9613fb4a4e6e188edabb26eb1be",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 89,
+    "prev_hash": "b94de9ba6b2e5e2009b69f160182de02ffbcb9613fb4a4e6e188edabb26eb1be",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "PROVENANCE_COMMIT",
+    "zk_proof": {
+      "proof_id": "0aa3e7ca5f77f805",
+      "verified": true,
+      "tx": "0x06124daf62eb2f710066b25355220e592f83d5b78e4b101b51b31b61cfff4f24",
+      "commitment": "04c328d4eb585e1b56170ab890ccde4cbb80e09a5f2416d175a53c7ddfeeef3f",
+      "nullifier": "fa9def08ceae6adb491247ce0284109f0dafbdbff94e9770241a773eb44b49d6",
+      "proof_data": "6760af4177951d951b3b8590e6dde13ada87cdb633f2d38ed1251d49b0eb4365",
+      "timestamp": "2026-04-07T05:39:47Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "6cfa17d44b9659e1"
+    },
+    "public_metadata": {
+      "commit_id": "CMT-7A0A8452D266",
+      "parent_id": "CMT-30A5763E9F9B",
+      "child_hash_commit": "54e53d4ebd49d92a...",
+      "operation_hash": "e6263bbf09dfbcda0199a019fcf1631b441068b94338e07f27315d562f6d3570",
+      "is_root": false
+    },
+    "timestamp": "2026-04-07T05:39:47Z",
+    "block_hash": "a1dde18fc5eb8402693efb097404ce6762b9a1e1520416a52257608b12a6b9ed",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 90,
+    "prev_hash": "a1dde18fc5eb8402693efb097404ce6762b9a1e1520416a52257608b12a6b9ed",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "SUBSCRIPTION_CREATE",
+    "zk_proof": {
+      "proof_id": "0x0bb57f47c8cedd6fd7628cdae0b345981a8a1f0d0a4cd4a00c0d3b419e366476",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "subscription_id": "cda19b50a3aba36adccac19a7556d262",
+      "target_fingerprint": "eace11da-be45-4a",
+      "payment_dust": 100,
+      "status": "LOCKED"
+    },
+    "timestamp": "2026-04-07T05:59:11Z",
+    "block_hash": "0e8531579f5a807d4eb58abafa1334de92be6871d7252e70268c3b78121993e4",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 91,
+    "prev_hash": "0e8531579f5a807d4eb58abafa1334de92be6871d7252e70268c3b78121993e4",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "SUBSCRIPTION_CLAIM",
+    "zk_proof": {
+      "proof_id": "0xd2492955ffc95a9a910ccb2cebdaa3179ced85604efca13ab9dea697eb113fe6",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "subscription_id": "cda19b50a3aba36adccac19a7556d262",
+      "status": "CLAIMED",
+      "decryption_key": "05d7f4ac64d74b4d08ebac9c458d7f5de2426c68a5eab97e0b3080fcd16ce955"
+    },
+    "timestamp": "2026-04-07T05:59:16Z",
+    "block_hash": "10b012930e8eef65dfb014a46c11cc42df1daf98336fbbf2c74ac8e9eaca8569",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 92,
+    "prev_hash": "10b012930e8eef65dfb014a46c11cc42df1daf98336fbbf2c74ac8e9eaca8569",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "SUBSCRIPTION_CLAIM",
+    "zk_proof": {
+      "proof_id": "0x4230c1329ffb0156fd333944cbcaa148702d65e60604e13c881f4b824edc685f",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "subscription_id": "d94c439e45e0e9ba69d31d2373469bfa",
+      "status": "CLAIMED",
+      "decryption_key": "81fde5a56f9ccd3e01418987eb6613e74cd68cd7861105fb35b7859efa005783"
+    },
+    "timestamp": "2026-04-07T05:59:17Z",
+    "block_hash": "8c522870f053b50361e4c70974ef1f313aea9ea35de97927f4361641e05b7752",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 93,
+    "prev_hash": "8c522870f053b50361e4c70974ef1f313aea9ea35de97927f4361641e05b7752",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "ZK_AUDIT",
+    "zk_proof": {
+      "proof_id": "0x88a53121aa59b2a7d6eb02a6294b3edda799471dfc5da0e7b40b525e42d8038c",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "37afcd39a841af8cf9e5bf5763a807e1",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "audit_id": "AUDIT-E75F6E69",
+      "status": "VERIFIED"
+    },
+    "timestamp": "2026-04-07T06:02:32Z",
+    "block_hash": "e6051707a182f605be46f2bc78062bb0cf2fe56fc8b34c44be2117d33c8ede55",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 94,
+    "prev_hash": "e6051707a182f605be46f2bc78062bb0cf2fe56fc8b34c44be2117d33c8ede55",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "SUBSCRIPTION_CREATE",
+    "zk_proof": {
+      "proof_id": "0x189b9dfd03886e0d0e5e7896c4b27ed2df3c9dce5ddb92ec01479efb5e35e358",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "subscription_id": "cda19b50a3aba36adccac19a7556d262",
+      "target_fingerprint": "eace11da-be45-4a",
+      "payment_dust": 100,
+      "status": "LOCKED"
+    },
+    "timestamp": "2026-04-07T15:50:40Z",
+    "block_hash": "cce699b94b36b6862e9833d85073f994ddcb33738e44966c773f96ed037018e5",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 95,
+    "prev_hash": "cce699b94b36b6862e9833d85073f994ddcb33738e44966c773f96ed037018e5",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "SUBSCRIPTION_CLAIM",
+    "zk_proof": {
+      "proof_id": "0xecafecd057b9e83402c4ae5b5d479b900a69b88b207ad6d5616b7038d0af2bc0",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "subscription_id": "cda19b50a3aba36adccac19a7556d262",
+      "status": "CLAIMED",
+      "decryption_key": "05d7f4ac64d74b4d08ebac9c458d7f5de2426c68a5eab97e0b3080fcd16ce955"
+    },
+    "timestamp": "2026-04-07T15:51:12Z",
+    "block_hash": "cf598b18735276fe33b71adc38994636e57ffc41712cb30ca25d24a71af2b508",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 96,
+    "prev_hash": "cf598b18735276fe33b71adc38994636e57ffc41712cb30ca25d24a71af2b508",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "0xf72dea2fc8e4ff76ea8630e655943aabcda538791748ca8edc09ed4fa007e86f",
+      "verified": true,
+      "commitment": "4da2426585ccd4086867f955436b5906a71500c539dfebb3a2d04cdd42babc3d",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "filename": "train.csv",
+      "row_count": 9800,
+      "column_count": 18,
+      "file_hash": "29d56da77e68cc46147b5a3a0ecae7631b336e0cd7cf8d34e7054618f1ad1652"
+    },
+    "timestamp": "2026-04-08T02:25:58Z",
+    "block_hash": "075164637b19699b30929bf093ae4a56a570b927afde40d44486e4f8788a4d03",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 97,
+    "prev_hash": "075164637b19699b30929bf093ae4a56a570b927afde40d44486e4f8788a4d03",
+    "session_id_hash": "0c400646b9fe03014d3146090fbeec9f",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "0x15dd4bfdb551dd4afc178a71a6f208b681b6678c78d06feea378bf6f460686c6",
+      "verified": true,
+      "commitment": "4da2426585ccd4086867f955436b5906a71500c539dfebb3a2d04cdd42babc3d",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-testnet"
+    },
+    "public_metadata": {
+      "filename": "train.csv",
+      "row_count": 9800,
+      "column_count": 18,
+      "file_hash": "29d56da77e68cc46147b5a3a0ecae7631b336e0cd7cf8d34e7054618f1ad1652"
+    },
+    "timestamp": "2026-04-08T02:27:16Z",
+    "block_hash": "052f7feee49a6a4a9f73f483ae15f80032720f01f0538079a468ba71c94bbb5d",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 98,
+    "prev_hash": "052f7feee49a6a4a9f73f483ae15f80032720f01f0538079a468ba71c94bbb5d",
+    "session_id_hash": "957a4a427a43a9c43001af9f68e53d93",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "0xd89120682cb4ca9cd71e5a6fdccf58a4f71bb9a62b6a560e5ea6f090f21c8e6b",
+      "verified": true,
+      "commitment": "6c457cb6b1e941dba8e97656db01622c5ebd4e5e42ab0e486e689625f0080e1a",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-simulation"
+    },
+    "public_metadata": {
+      "filename": "lumina_test_dataset.csv",
+      "row_count": 3000,
+      "column_count": 21,
+      "file_hash": "48baf542b6f75a7a9a6f7cf75c0af9c0043818ab522bed816f01813391ba246f"
+    },
+    "timestamp": "2026-04-08T03:05:07Z",
+    "block_hash": "9927fd118c17cc0e2f7332868e138b34915bdee7eeaf99dd9db848c1e46e0b64",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 99,
+    "prev_hash": "9927fd118c17cc0e2f7332868e138b34915bdee7eeaf99dd9db848c1e46e0b64",
+    "session_id_hash": "5124d5555ad5467bfa7f10cab1420d90",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "0x08e8cd1f51f3c56a2b9b13824c8810de4fa23afbc45182ae741958650dcbabbb",
+      "verified": true,
+      "commitment": "419cb5991f68738442eef34c6e9772cf6faf27798bcdff299931b8f8adc60275",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "filename": "lumina_test_dataset.csv",
+      "row_count": 3000,
+      "column_count": 21,
+      "file_hash": "48baf542b6f75a7a9a6f7cf75c0af9c0043818ab522bed816f01813391ba246f"
+    },
+    "timestamp": "2026-04-08T03:16:55Z",
+    "block_hash": "d0cf0b120c835d126798f68b74f89ffdbb38454a54ee3f024182c98697008cf9",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 100,
+    "prev_hash": "d0cf0b120c835d126798f68b74f89ffdbb38454a54ee3f024182c98697008cf9",
+    "session_id_hash": "5124d5555ad5467bfa7f10cab1420d90",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "0xa4e4d06c885230322609bd0e61f223a956ba0d00da7fb9c21647d01dea5b15f2",
+      "verified": true,
+      "commitment": "419cb5991f68738442eef34c6e9772cf6faf27798bcdff299931b8f8adc60275",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "filename": "lumina_test_dataset.csv",
+      "row_count": 3000,
+      "column_count": 21,
+      "file_hash": "48baf542b6f75a7a9a6f7cf75c0af9c0043818ab522bed816f01813391ba246f"
+    },
+    "timestamp": "2026-04-08T03:26:37Z",
+    "block_hash": "6596b733c802b66034e249977f2415094c9248634cc7d33c6811112439593d2e",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 101,
+    "prev_hash": "6596b733c802b66034e249977f2415094c9248634cc7d33c6811112439593d2e",
+    "session_id_hash": "5124d5555ad5467bfa7f10cab1420d90",
+    "event_type": "FINGERPRINT",
+    "zk_proof": {
+      "proof_id": "0x151c46e36edb9c4608e563d7f2a71bfc9d6dae0fe493e2373b2dedb4da261bcf",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "00377809fbaf2bb3476cc95f8114dd4a",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "fingerprint_id": "d067a437-be9b-47",
+      "data_category": "financial",
+      "row_count": "1K\u201310K",
+      "column_count": 21,
+      "column_hashes": [
+        "ceecee0467d0",
+        "4a9fc0281db1",
+        "a2175c2cdf69",
+        "d0904faa5ed4",
+        "782af2f0612c",
+        "6d47a68eee8d",
+        "bcf95eb621ed",
+        "33ce78d04c33",
+        "df12214f2ee6",
+        "cfbd8892012e",
+        "57e722b9e838",
+        "7f4d95cf24f0",
+        "eed7c09cdda3",
+        "a0e6382eec6d",
+        "9c6ccceb8052",
+        "10261d2b34e2",
+        "4280e6d4b0d8",
+        "0fa858be19fc",
+        "bcdc44f64750",
+        "b89baa321dc0",
+        "b193ba6eb767"
+      ],
+      "is_public": false
+    },
+    "timestamp": "2026-04-08T03:26:51Z",
+    "block_hash": "6140069be6de75169f47a5f51668209fc9cb1aec58cfd6127626e548f511ccf6",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 102,
+    "prev_hash": "6140069be6de75169f47a5f51668209fc9cb1aec58cfd6127626e548f511ccf6",
+    "session_id_hash": "5124d5555ad5467bfa7f10cab1420d90",
+    "event_type": "SUBSCRIPTION_CREATE",
+    "zk_proof": {
+      "proof_id": "0x1bb0a1a8e1a04bfc0c0953e0f5f28debec7d39518fc045b5100ba8680df223b6",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "subscription_id": "b455d5cb6dbdb42b0d62980e3e0550af",
+      "target_fingerprint": "eace11da-be45-4a",
+      "payment_dust": 100,
+      "status": "LOCKED"
+    },
+    "timestamp": "2026-04-08T03:27:06Z",
+    "block_hash": "c5c218cb85e1bbe73453c48e3bf94fcd95fe8c7af6f7a8553e5142bafe786c6e",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 103,
+    "prev_hash": "c5c218cb85e1bbe73453c48e3bf94fcd95fe8c7af6f7a8553e5142bafe786c6e",
+    "session_id_hash": "5124d5555ad5467bfa7f10cab1420d90",
+    "event_type": "SUBSCRIPTION_CREATE",
+    "zk_proof": {
+      "proof_id": "0x27c30ea4fd1babd9af6a06dca88b97255803320b42bac180444352b9d6c12a1c",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "subscription_id": "b3bb530200e97e9d83010f5bd936b7ff",
+      "target_fingerprint": "4da2426585ccd4086867f955436b5906a71500c539dfebb3a2d04cdd42babc3d",
+      "payment_dust": 100,
+      "status": "LOCKED"
+    },
+    "timestamp": "2026-04-08T03:28:03Z",
+    "block_hash": "213b2db23e0dd0b1d701f1fb370a5cfce95fa3b13bd010ab7eab927f903219cb",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 104,
+    "prev_hash": "213b2db23e0dd0b1d701f1fb370a5cfce95fa3b13bd010ab7eab927f903219cb",
+    "session_id_hash": "5124d5555ad5467bfa7f10cab1420d90",
+    "event_type": "BOUNTY_CLAIM",
+    "zk_proof": {
+      "proof_id": "0x4b9876ad1f9a58c2b5018a425e8d75cfe890cd4b1a0ba6a2af660e3f139e29e5",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "00377809fbaf2bb3476cc95f8114dd4a",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "bounty_id": "bounty-baae5aeb-21f",
+      "fingerprint_id": "419cb5991f68738442eef34c6e9772cf6faf27798bcdff299931b8f8adc60275",
+      "success": true,
+      "similarity": 1.0
+    },
+    "timestamp": "2026-04-08T03:28:40Z",
+    "block_hash": "6c4698b504ea944981e8cf90d0f1db227d822c86dc67f09ab104aeb3746858e2",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 105,
+    "prev_hash": "6c4698b504ea944981e8cf90d0f1db227d822c86dc67f09ab104aeb3746858e2",
+    "session_id_hash": "5124d5555ad5467bfa7f10cab1420d90",
+    "event_type": "PROVENANCE_COMMIT",
+    "zk_proof": {
+      "proof_id": "ecc225172d30544a",
+      "verified": true,
+      "tx": "0x37d1a6aa93b80d9b80cfdce3b88da5824a849d55756d9b8fc9d3cc952f145057",
+      "commitment": "dc7de0ad50a6d1ea76bab699d59147cfd6ae932e6c055bea34eb85737441ec6e",
+      "nullifier": "fe5d7ca4be54c15b4cc3d8ea49f6ef32900742646d2a80fd5828d22424030603",
+      "proof_data": "8275d0fcc48fcfbd5c994f3e6797130a0c8148388c0ea00fca578a1f47c25fdd",
+      "timestamp": "2026-04-08T03:30:45Z",
+      "scheme": "SNARK-SHA3-256-simulated",
+      "public_inputs_hash": "556f7655db97d568"
+    },
+    "public_metadata": {
+      "commit_id": "CMT-03C2691C6B5B",
+      "parent_id": "CMT-ROOT-ccc3",
+      "child_hash_commit": "9413dbd6d83b3d7b...",
+      "operation_hash": "4973700daff1afe6cbe1380785e4d7a343563c8d1a000d2dc0ab3c5e6b094152",
+      "is_root": false
+    },
+    "timestamp": "2026-04-08T03:30:45Z",
+    "block_hash": "f79b90953a7eb3bcb3f1c6f181b8e14b27628b1928cb1e7f839b44611735f6bc",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 106,
+    "prev_hash": "f79b90953a7eb3bcb3f1c6f181b8e14b27628b1928cb1e7f839b44611735f6bc",
+    "session_id_hash": "5124d5555ad5467bfa7f10cab1420d90",
+    "event_type": "SUBSCRIPTION_CREATE",
+    "zk_proof": {
+      "proof_id": "0xb2a0213305e864080f73b4aba69e6ed87b337efdecd63ebbe5235560893e65ab",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "subscription_id": "b455d5cb6dbdb42b0d62980e3e0550af",
+      "target_fingerprint": "eace11da-be45-4a",
+      "payment_dust": 100,
+      "status": "LOCKED"
+    },
+    "timestamp": "2026-04-08T03:32:32Z",
+    "block_hash": "31af25ec0a5979bd7a13f9179fd75e487e5d33a0405a2d3972fb1fee261f64d9",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 107,
+    "prev_hash": "31af25ec0a5979bd7a13f9179fd75e487e5d33a0405a2d3972fb1fee261f64d9",
+    "session_id_hash": "5124d5555ad5467bfa7f10cab1420d90",
+    "event_type": "BOUNTY_CLAIM",
+    "zk_proof": {
+      "proof_id": "0xfd49a6be9a4d8771c322a51315c3a4b14ed27475ff5ef051bcf7d64e07c56a4f",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "00377809fbaf2bb3476cc95f8114dd4a",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "bounty_id": "bounty-040bd459-324",
+      "fingerprint_id": "419cb5991f68738442eef34c6e9772cf6faf27798bcdff299931b8f8adc60275",
+      "success": false,
+      "similarity": 0.6667
+    },
+    "timestamp": "2026-04-08T03:33:29Z",
+    "block_hash": "9146b10f2bb448d9ec6de1a969fb805f9f0de8f14cd40d189afd3900502dfadd",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 108,
+    "prev_hash": "9146b10f2bb448d9ec6de1a969fb805f9f0de8f14cd40d189afd3900502dfadd",
+    "session_id_hash": "5124d5555ad5467bfa7f10cab1420d90",
+    "event_type": "MARKETPLACE_LIST",
+    "zk_proof": {
+      "proof_id": "0x77c77bd24310f67af0a3887c9178597940227565c94bf6cb9d101163a00bb2c6",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "00377809fbaf2bb3476cc95f8114dd4a",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "listing_id": "c3edfaed-bcef-40",
+      "fingerprint_id": "419cb5991f68738442eef34c6e9772cf6faf27798bcdff299931b8f8adc60275",
+      "data_category": "lumina_test_dataset.csv",
+      "row_count_range": 3000
+    },
+    "timestamp": "2026-04-08T03:33:49Z",
+    "block_hash": "dd5e959bd9249708fcaa27fdfabffc1c25a3081f4f3064dc99f197b4644e176f",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 109,
+    "prev_hash": "dd5e959bd9249708fcaa27fdfabffc1c25a3081f4f3064dc99f197b4644e176f",
+    "session_id_hash": "5124d5555ad5467bfa7f10cab1420d90",
+    "event_type": "ATTESTATION_ISSUED",
+    "zk_proof": {
+      "proof_id": "0x93a0029eaace6a1fbf1931ac1fd7d37642d6a9f6a1c758432a8b7ab622d4fb03",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "00377809fbaf2bb3476cc95f8114dd4a",
+      "network": "midnight-undeployed"
+    },
+    "public_metadata": {
+      "credential_id": "vc-20759045-796",
+      "fingerprint_id": "419cb5991f68738442eef34c6e9772cf6faf27798bcdff299931b8f8adc60275",
+      "issuer_id": "NexusAIData_Compliance_Oracle",
+      "claim_type": "NO_PII",
+      "issued_at": "2026-04-08T09:04:05.724913",
+      "valid": true
+    },
+    "timestamp": "2026-04-08T03:34:05Z",
+    "block_hash": "fa51f6f8499629361f47b00e82dfd663f704685f837e38d01f48abc4c35ebc8d",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 110,
+    "prev_hash": "fa51f6f8499629361f47b00e82dfd663f704685f837e38d01f48abc4c35ebc8d",
+    "session_id_hash": "5124d5555ad5467bfa7f10cab1420d90",
+    "event_type": "REGISTER",
+    "zk_proof": {
+      "proof_id": "0x231c0d7a36c25304f617534cdc908cb0339ef76479cfd1f1945c083797b05375",
+      "verified": true,
+      "commitment": "419cb5991f68738442eef34c6e9772cf6faf27798bcdff299931b8f8adc60275",
+      "session_commitment": "00000000000000000000000000000000",
+      "network": "midnight-simulation"
+    },
+    "public_metadata": {
+      "filename": "lumina_test_dataset.csv",
+      "row_count": 3000,
+      "column_count": 21,
+      "file_hash": "48baf542b6f75a7a9a6f7cf75c0af9c0043818ab522bed816f01813391ba246f"
+    },
+    "timestamp": "2026-04-08T04:40:29Z",
+    "block_hash": "21e15ce07b3520388a43aeb43b984f48bc0bdf96f548f9b6b7a323086887be2b",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 111,
+    "prev_hash": "21e15ce07b3520388a43aeb43b984f48bc0bdf96f548f9b6b7a323086887be2b",
+    "session_id_hash": "5124d5555ad5467bfa7f10cab1420d90",
+    "event_type": "FINGERPRINT",
+    "zk_proof": {
+      "proof_id": "0xdfa69517ca862cc1c92c8fd510c9e209e5693964ae99e60fe29109152aa4067e",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "00377809fbaf2bb3476cc95f8114dd4a",
+      "network": "midnight-simulation"
+    },
+    "public_metadata": {
+      "fingerprint_id": "da1a1c87-7af1-48",
+      "data_category": "financial",
+      "row_count": "1K\u201310K",
+      "column_count": 21,
+      "column_hashes": [
+        "ceecee0467d0",
+        "4a9fc0281db1",
+        "a2175c2cdf69",
+        "d0904faa5ed4",
+        "782af2f0612c",
+        "6d47a68eee8d",
+        "bcf95eb621ed",
+        "33ce78d04c33",
+        "df12214f2ee6",
+        "cfbd8892012e",
+        "57e722b9e838",
+        "7f4d95cf24f0",
+        "eed7c09cdda3",
+        "a0e6382eec6d",
+        "9c6ccceb8052",
+        "10261d2b34e2",
+        "4280e6d4b0d8",
+        "0fa858be19fc",
+        "bcdc44f64750",
+        "b89baa321dc0",
+        "b193ba6eb767"
+      ],
+      "is_public": false
+    },
+    "timestamp": "2026-04-08T04:40:46Z",
+    "block_hash": "c485ab2f179cf1b8fd90fc0e2d099b07411c181eab43d672c40e3a1f6b4495f6",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 112,
+    "prev_hash": "c485ab2f179cf1b8fd90fc0e2d099b07411c181eab43d672c40e3a1f6b4495f6",
+    "session_id_hash": "5124d5555ad5467bfa7f10cab1420d90",
+    "event_type": "ZK_AUDIT",
+    "zk_proof": {
+      "proof_id": "0xb00aabaeaef42790a02a4dbd75e19fcbd4f980a8d9d101238c60ef2bbab3ce56",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "00377809fbaf2bb3476cc95f8114dd4a",
+      "network": "midnight-simulation"
+    },
+    "public_metadata": {
+      "audit_id": "AUDIT-E932E44D",
+      "status": "VERIFIED"
+    },
+    "timestamp": "2026-04-08T04:40:51Z",
+    "block_hash": "6a4b95cd99201bdd2e46ca00443cadad7eccd9b97ad66e33cb5768bc25db65a6",
+    "network": "midnight-testnet-simulated"
+  },
+  {
+    "block_number": 113,
+    "prev_hash": "6a4b95cd99201bdd2e46ca00443cadad7eccd9b97ad66e33cb5768bc25db65a6",
+    "session_id_hash": "5124d5555ad5467bfa7f10cab1420d90",
+    "event_type": "MARKETPLACE_LIST",
+    "zk_proof": {
+      "proof_id": "0xb76e9caf04dac962205356b7d815d3a9c2b5b47782b32d018fcb0fb7b976dc14",
+      "verified": true,
+      "commitment": "00000000000000000000000000000000",
+      "session_commitment": "00377809fbaf2bb3476cc95f8114dd4a",
+      "network": "midnight-simulation"
+    },
+    "public_metadata": {
+      "listing_id": "ba40a4c0-3f14-44",
+      "fingerprint_id": "419cb5991f68738442eef34c6e9772cf6faf27798bcdff299931b8f8adc60275",
+      "data_category": "lumina_test_dataset.csv",
+      "row_count_range": 3000
+    },
+    "timestamp": "2026-04-08T04:41:10Z",
+    "block_hash": "4b3ea53f52948d048881d3f591c881afd422244d9ec57a0b90f9986de555dafb",
+    "network": "midnight-testnet-simulated"
+  }
+]
