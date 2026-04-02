@@ -1,0 +1,14 @@
+{
+  "67ed71fc": {
+    "session_id": "67ed71fc",
+    "filename": "lumina_test_dataset.csv",
+    "filepath": "./uploads/67ed71fc_lumina_test_dataset.csv",
+    "row_count": 3000,
+    "column_count": 21,
+    "memory_usage_mb": 0.56,
+    "created_at": "2026-04-08T15:37:45.932520",
+    "analysis": null,
+    "enriched_df": null,
+    "df": null
+  }
+}
