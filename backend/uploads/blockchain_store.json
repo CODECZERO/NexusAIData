@@ -1,0 +1,72 @@
+{
+    "session_fingerprints": {
+        "0c400646b9fe03014d3146090fbeec9f": [
+            "eace11da-be45-4a",
+            "ece0385c-8ceb-46",
+            "46daf815-2ab2-47"
+        ],
+        "5124d5555ad5467bfa7f10cab1420d90": [
+            "d067a437-be9b-47",
+            "da1a1c87-7af1-48"
+        ]
+    },
+    "bounties": {
+        "bounty-baae5aeb-21f": {
+            "bounty_id": "bounty-baae5aeb-21f",
+            "reward_dust": 50,
+            "description": "I need x data for my shop",
+            "required_similarity_score": 0.9,
+            "target_category": "financial",
+            "target_column_count": 18,
+            "status": "claimed",
+            "created_at": "2026-04-07T03:02:12Z",
+            "claimed_by": "5124d5555ad5467bfa7f10cab1420d90",
+            "claimed_at": "2026-04-08T08:58:40.224242",
+            "claimer_fingerprint_id": "419cb5991f68738442eef34c6e9772cf6faf27798bcdff299931b8f8adc60275",
+            "claimer_session_id": "ccc34db7",
+            "similarity_achieved": 1.0
+        },
+        "bounty-040bd459-324": {
+            "bounty_id": "bounty-040bd459-324",
+            "reward_dust": 50,
+            "description": "More data",
+            "required_similarity_score": 0.8,
+            "target_category": "train.csv",
+            "target_column_count": 18,
+            "status": "open",
+            "created_at": "2026-04-07T08:37:18.083197"
+        }
+    },
+    "credentials": {
+        "4da2426585ccd4086867f955436b5906a71500c539dfebb3a2d04cdd42babc3d": [
+            {
+                "credential_id": "vc-048e0c5a-0e8",
+                "fingerprint_id": "4da2426585ccd4086867f955436b5906a71500c539dfebb3a2d04cdd42babc3d",
+                "issuer_id": "NexusAIData_Compliance_Oracle",
+                "claim_type": "NO_PII",
+                "issued_at": "2026-04-07T08:32:59.311260",
+                "valid": true
+            }
+        ],
+        "eace11da-be45-4a": [
+            {
+                "credential_id": "vc-4984ca52-d6e",
+                "fingerprint_id": "eace11da-be45-4a",
+                "issuer_id": "NexusAIData_Compliance_Oracle",
+                "claim_type": "NO_PII",
+                "issued_at": "2026-04-07T11:08:53.809402",
+                "valid": true
+            }
+        ],
+        "419cb5991f68738442eef34c6e9772cf6faf27798bcdff299931b8f8adc60275": [
+            {
+                "credential_id": "vc-20759045-796",
+                "fingerprint_id": "419cb5991f68738442eef34c6e9772cf6faf27798bcdff299931b8f8adc60275",
+                "issuer_id": "NexusAIData_Compliance_Oracle",
+                "claim_type": "NO_PII",
+                "issued_at": "2026-04-08T09:04:05.724913",
+                "valid": true
+            }
+        ]
+    }
+}
