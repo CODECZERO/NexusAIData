@@ -1,0 +1,15 @@
+﻿src/components/Dashboard.tsx(1178,28): error TS2304: Cannot find name 'session'.
+src/components/Dashboard.tsx(1179,28): error TS2304: Cannot find name 'activeTab'.
+src/components/Dashboard.tsx(1180,40): error TS2304: Cannot find name 'setActiveTab'.
+src/components/Dashboard.tsx(1184,25): error TS2304: Cannot find name 'setActiveTab'.
+src/components/Dashboard.tsx(1186,25): error TS2304: Cannot find name 'setActiveTab'.
+src/components/Dashboard.tsx(1188,25): error TS2304: Cannot find name 'setActiveTab'.
+src/components/Dashboard.tsx(1190,25): error TS2304: Cannot find name 'setActiveTab'.
+src/components/Dashboard.tsx(1192,25): error TS2304: Cannot find name 'setActiveTab'.
+src/components/Dashboard.tsx(1194,49): error TS2304: Cannot find name 'setActiveTab'.
+src/components/PresenterMode.tsx(17,8): error TS2613: Module '"C:/Users/gaurav/OneDrive/Desktop/NexusAIData-main/frontend/src/components/SimulationPanel"' has no default export. Did you mean to use 'import { SimulationPanel } from "C:/Users/gaurav/OneDrive/Desktop/NexusAIData-main/frontend/src/components/SimulationPanel"' instead?
+src/components/PresenterMode.tsx(40,17): error TS2741: Property 'onDataUpdate' is missing in type '{ sessionId: string; onCleaningApplied: () => void; }' but required in type 'DataHealthDashboardProps'.
+src/components/PresenterMode.tsx(45,28): error TS2322: Type '{ analysis: any; role: string; }' is not assignable to type 'IntrinsicAttributes & Props'.
+  Property 'analysis' does not exist on type 'IntrinsicAttributes & Props'.
+src/components/PresenterMode.tsx(50,31): error TS2322: Type '{ sessionId: string; columns: string[]; }' is not assignable to type 'IntrinsicAttributes & Props'.
+  Property 'sessionId' does not exist on type 'IntrinsicAttributes & Props'. Did you mean 'session'?
