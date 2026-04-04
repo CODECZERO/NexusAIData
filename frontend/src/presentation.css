@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+  /* Obsidian Intelligence (v2) Design Tokens */
+  --obsidian-base: hsl(230, 20%, 3%);
+  --obsidian-deep: hsl(230, 25%, 5%);
+  --obsidian-surface: hsla(230, 15%, 8%, 0.6);
+  --obsidian-border: hsla(230, 10%, 20%, 0.3);
+  
+  --nexus-glow-blue: hsla(217, 91%, 60%, 0.4);
+  --nexus-glow-purple: hsla(260, 83%, 62%, 0.4);
+  --nexus-accent-blue: hsl(217, 91%, 60%);
+  --nexus-accent-purple: hsl(260, 83%, 62%);
+  --nexus-accent-success: hsl(158, 64%, 52%);
+}
+
+body.presentation-mode {
+  background-color: var(--obsidian-base);
+  color: #f8fafc;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+}
+
+/* Base Layout Framework */
+.obsidian-deck {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: radial-gradient(circle at 50% 0%, hsla(217, 91%, 60%, 0.05) 0%, transparent 70%);
+}
+
+/* Cinematic Background Particles */
+.nexus-nebula {
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(circle at 20% 30%, var(--nexus-glow-blue) 0%, transparent 25%),
+    radial-gradient(circle at 80% 70%, var(--nexus-glow-purple) 0%, transparent 30%);
+  filter: blur(140px);
+  opacity: 0.2;
+  z-index: 0;
+  animation: nebula-drift 30s infinite alternate ease-in-out;
+}
+
+@keyframes nebula-drift {
+  0% { transform: scale(1) translate(0, 0); }
+  100% { transform: scale(1.2) translate(5%, 2%); }
+}
+
+/* Unified Command UI */
+.glass-hud {
+  background: var(--obsidian-surface);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--obsidian-border);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.glow-border {
+  position: relative;
+}
+
+.glow-border::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, white, transparent, hsla(217, 91%, 60%, 0.3));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+/* Premium Navigation HUD */
+.sidebar-command {
+  width: 280px;
+  height: calc(100vh - 120px);
+  margin: 20px;
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.nav-item-v2 {
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid transparent;
+}
+
+.nav-item-v2.active {
+  background: hsla(217, 91%, 60%, 0.1);
+  border-color: hsla(217, 91%, 60%, 0.2);
+  color: var(--nexus-accent-blue);
+  box-shadow: 
+    0 0 20px hsla(217, 91%, 60%, 0.05),
+    inset 0 0 10px hsla(217, 91%, 60%, 0.05);
+}
+
+.nav-item-v2.active::after {
+  content: '';
+  position: absolute;
+  left: -24px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 24px;
+  background: var(--nexus-accent-blue);
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0 0 15px var(--nexus-accent-blue);
+}
+
+/* Cinematic Content Stage */
+.content-stage-v2 {
+  flex: 1;
+  margin: 20px 20px 20px 0;
+  padding: 40px;
+  border-radius: 32px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 0 40px rgba(0,0,0,0.5);
+}
+
+.content-stage-v2::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent, hsla(0,0%,100%,0.05), transparent);
+}
+
+/* Typography Redefinition */
+.nexus-title-v2 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  background: linear-gradient(to bottom, #fff 30%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Status Indicators */
+.pulse-emerald {
+  animation: pulse-emerald 2s infinite;
+}
+
+@keyframes pulse-emerald {
+  0% { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.4); }
+  70% { box-shadow: 0 0 0 8px rgba(52, 211, 153, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0); }
+}
+
+/* Metric Display */
+.metric-hud {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff;
+  text-shadow: 0 0 10px hsla(0,0%,100%,0.2);
+}
