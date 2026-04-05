@@ -1,0 +1,92 @@
+pragma language_version >= 0.14.0;
+import CompactStandardLibrary;
+
+/**
+ * NexusAIData — Verifiable Audit Proof
+ * ======================================
+ * On-chain proof that a data analysis pipeline was executed correctly.
+ * Enables regulatory auditing without exposing dataset contents.
+ */
+
+// ── Public on-chain state ────────────────────────────────────────────────────
+export ledger audit_sessions: Map<Bytes<16>, Bytes<32>>;
+export ledger audit_fingerprints: Map<Bytes<16>, Bytes<32>>;
+export ledger audit_pipeline_hashes: Map<Bytes<16>, Bytes<32>>;
+export ledger audit_integrity_proofs: Map<Bytes<16>, Bytes<32>>;
+export ledger audit_verified: Map<Bytes<16>, Boolean>;
+export ledger audit_attestation_type: Map<Bytes<16>, Uint<8>>;
+export ledger total_audits: Counter;
+export ledger total_verified: Counter;
+
+// ── Off-chain witnesses ──────────────────────────────────────────────────────
+witness compute_audit_id(
+  session_commitment: Bytes<32>,
+  fingerprint: Bytes<32>
+): Bytes<16>;
+
+witness compute_pipeline_hash(
+  operations: Vector<16, Bytes<32>>,
+  parameters: Bytes<32>
+): Bytes<32>;
+
+witness verify_data_integrity(
+  data_hash: Bytes<32>,
+  pipeline_hash: Bytes<32>,
+  expected_output_hash: Bytes<32>
+): [Bytes<32>, Boolean];
+
+witness get_session_commitment(session_salt: Bytes<32>): Bytes<32>;
+
+// ── ZK Circuits ──────────────────────────────────────────────────────────────
+
+/**
+ * Submit an audit proof to the chain.
+ * Proves a pipeline was executed correctly without exposing data or results.
+ */
+export circuit submit_audit(
+  session_salt: Bytes<32>,
+  fingerprint_commitment: Bytes<32>,
+  operations: Vector<16, Bytes<32>>,
+  parameters: Bytes<32>,
+  expected_output_hash: Bytes<32>,
+  attestation_type: Uint<8>
+): Bytes<16> {
+  const session_commitment = get_session_commitment(session_salt);
+  const audit_id = compute_audit_id(session_commitment, fingerprint_commitment);
+  const pipeline_hash = compute_pipeline_hash(operations, parameters);
+
+  const [integrity_proof, is_valid] = verify_data_integrity(
+    fingerprint_commitment,
+    pipeline_hash,
+    expected_output_hash
+  );
+
+  assert(disclose(is_valid), "Data integrity verification failed");
+  assert(disclose(attestation_type) >= 1 as Uint<8>, "Invalid attestation type");
+  assert(disclose(attestation_type) <= 3 as Uint<8>, "Invalid attestation type");
+
+  audit_sessions.insert(disclose(audit_id), disclose(session_commitment));
+  audit_fingerprints.insert(disclose(audit_id), disclose(fingerprint_commitment));
+  audit_pipeline_hashes.insert(disclose(audit_id), disclose(pipeline_hash));
+  audit_integrity_proofs.insert(disclose(audit_id), disclose(integrity_proof));
+  audit_verified.insert(disclose(audit_id), true);
+  audit_attestation_type.insert(disclose(audit_id), disclose(attestation_type));
+  total_audits.increment(1);
+  total_verified.increment(1);
+
+  return disclose(audit_id);
+}
+
+/**
+ * Verify an existing audit proof (public query).
+ */
+export circuit verify_audit(
+  audit_id: Bytes<16>
+): [Boolean, Bytes<32>, Bytes<32>, Uint<8>] {
+  return [
+    audit_verified.lookup(disclose(audit_id)),
+    audit_fingerprints.lookup(disclose(audit_id)),
+    audit_pipeline_hashes.lookup(disclose(audit_id)),
+    audit_attestation_type.lookup(disclose(audit_id))
+  ];
+}
