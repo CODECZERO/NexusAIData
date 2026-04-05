@@ -1,0 +1,88 @@
+pragma language_version >= 0.14.0;
+import CompactStandardLibrary;
+
+/**
+ * NexusAIData — Data Fingerprint Registry
+ * ========================================
+ * Privacy-preserving dataset fingerprint registration on Midnight.
+ * Raw data NEVER leaves the user's device — only commitments are stored on-chain.
+ */
+
+// ── Public on-chain state ────────────────────────────────────────────────────
+export ledger fingerprints: Map<Bytes<16>, Bytes<32>>;
+export ledger owners: Map<Bytes<16>, Bytes<32>>;
+export ledger schema_hashes: Map<Bytes<16>, Bytes<32>>;
+export ledger row_buckets: Map<Bytes<16>, Uint<8>>;
+export ledger is_registered: Map<Bytes<16>, Boolean>;
+export ledger total_registered: Counter;
+
+// ── Off-chain private witnesses ──────────────────────────────────────────────
+witness get_dataset_commitment(
+  column_names: Vector<10, Bytes<64>>,
+  row_count: Uint<32>,
+  data_hash: Bytes<32>
+): Bytes<32>;
+
+witness get_owner_identity(session_salt: Bytes<32>): Bytes<32>;
+
+witness compute_schema_hash(column_names: Vector<10, Bytes<64>>): Bytes<32>;
+
+witness compute_fingerprint_id(commitment: Bytes<32>, owner: Bytes<32>): Bytes<16>;
+
+witness get_row_bucket(row_count: Uint<32>): Uint<8>;
+
+// ── ZK Circuits ──────────────────────────────────────────────────────────────
+
+/**
+ * Register a dataset fingerprint on the Midnight chain.
+ * Private inputs go through witnesses (local proof server).
+ * Only the commitment and metadata are stored on public ledger.
+ */
+export circuit register_fingerprint(
+  column_names: Vector<10, Bytes<64>>,
+  row_count: Uint<32>,
+  data_hash: Bytes<32>,
+  session_salt: Bytes<32>
+): Bytes<16> {
+  const commitment = get_dataset_commitment(column_names, row_count, data_hash);
+  const owner = get_owner_identity(session_salt);
+  const schema = compute_schema_hash(column_names);
+  const fp_id = compute_fingerprint_id(commitment, owner);
+  const bucket = get_row_bucket(row_count);
+
+  fingerprints.insert(disclose(fp_id), disclose(commitment));
+  owners.insert(disclose(fp_id), disclose(owner));
+  schema_hashes.insert(disclose(fp_id), disclose(schema));
+  row_buckets.insert(disclose(fp_id), disclose(bucket));
+  is_registered.insert(disclose(fp_id), true);
+  total_registered.increment(1);
+
+  return disclose(fp_id);
+}
+
+/**
+ * Verify dataset ownership via ZK proof.
+ * Proves knowledge of the session_salt matching the stored owner commitment.
+ */
+export circuit verify_ownership(
+  fingerprint_id: Bytes<16>,
+  session_salt: Bytes<32>
+): Boolean {
+  const claimed_owner = get_owner_identity(session_salt);
+  const stored_owner = owners.lookup(disclose(fingerprint_id));
+  assert(disclose(claimed_owner) == stored_owner, "Ownership verification failed");
+  return true;
+}
+
+/**
+ * Read public fingerprint metadata (no ZK proof required).
+ */
+export circuit get_fingerprint_info(
+  fingerprint_id: Bytes<16>
+): [Bytes<32>, Bytes<32>, Uint<8>] {
+  return [
+    fingerprints.lookup(disclose(fingerprint_id)),
+    schema_hashes.lookup(disclose(fingerprint_id)),
+    row_buckets.lookup(disclose(fingerprint_id))
+  ];
+}
