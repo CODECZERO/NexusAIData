@@ -1,0 +1,206 @@
+{
+  "compiler-version": "0.30.0",
+  "language-version": "0.22.0",
+  "runtime-version": "0.15.0",
+  "circuits": [
+    {
+      "name": "submit_audit",
+      "pure": false,
+      "proof": true,
+      "arguments": [
+        {
+          "name": "session_salt",
+          "type": {
+            "type-name": "Bytes",
+            "length": 32
+          }
+        },
+        {
+          "name": "fingerprint_commitment",
+          "type": {
+            "type-name": "Bytes",
+            "length": 32
+          }
+        },
+        {
+          "name": "operations",
+          "type": {
+            "type-name": "Vector",
+            "length": 16,
+            "type": {
+              "type-name": "Bytes",
+              "length": 32
+            }
+          }
+        },
+        {
+          "name": "parameters",
+          "type": {
+            "type-name": "Bytes",
+            "length": 32
+          }
+        },
+        {
+          "name": "expected_output_hash",
+          "type": {
+            "type-name": "Bytes",
+            "length": 32
+          }
+        },
+        {
+          "name": "attestation_type",
+          "type": {
+            "type-name": "Uint",
+            "maxval": 255
+          }
+        }
+      ],
+      "result-type": {
+        "type-name": "Bytes",
+        "length": 16
+      }
+    },
+    {
+      "name": "verify_audit",
+      "pure": false,
+      "proof": true,
+      "arguments": [
+        {
+          "name": "audit_id",
+          "type": {
+            "type-name": "Bytes",
+            "length": 16
+          }
+        }
+      ],
+      "result-type": {
+        "type-name": "Tuple",
+        "types": [
+          {
+            "type-name": "Boolean"
+          },
+          {
+            "type-name": "Bytes",
+            "length": 32
+          },
+          {
+            "type-name": "Bytes",
+            "length": 32
+          },
+          {
+            "type-name": "Uint",
+            "maxval": 255
+          }
+        ]
+      }
+    }
+  ],
+  "witnesses": [
+    {
+      "name": "compute_audit_id",
+      "arguments": [
+        {
+          "name": "session_commitment",
+          "type": {
+            "type-name": "Bytes",
+            "length": 32
+          }
+        },
+        {
+          "name": "fingerprint",
+          "type": {
+            "type-name": "Bytes",
+            "length": 32
+          }
+        }
+      ],
+      "result type": {
+        "type-name": "Bytes",
+        "length": 16
+      }
+    },
+    {
+      "name": "compute_pipeline_hash",
+      "arguments": [
+        {
+          "name": "operations",
+          "type": {
+            "type-name": "Vector",
+            "length": 16,
+            "type": {
+              "type-name": "Bytes",
+              "length": 32
+            }
+          }
+        },
+        {
+          "name": "parameters",
+          "type": {
+            "type-name": "Bytes",
+            "length": 32
+          }
+        }
+      ],
+      "result type": {
+        "type-name": "Bytes",
+        "length": 32
+      }
+    },
+    {
+      "name": "verify_data_integrity",
+      "arguments": [
+        {
+          "name": "data_hash",
+          "type": {
+            "type-name": "Bytes",
+            "length": 32
+          }
+        },
+        {
+          "name": "pipeline_hash",
+          "type": {
+            "type-name": "Bytes",
+            "length": 32
+          }
+        },
+        {
+          "name": "expected_output_hash",
+          "type": {
+            "type-name": "Bytes",
+            "length": 32
+          }
+        }
+      ],
+      "result type": {
+        "type-name": "Tuple",
+        "types": [
+          {
+            "type-name": "Bytes",
+            "length": 32
+          },
+          {
+            "type-name": "Boolean"
+          }
+        ]
+      }
+    },
+    {
+      "name": "get_session_commitment",
+      "arguments": [
+        {
+          "name": "session_salt",
+          "type": {
+            "type-name": "Bytes",
+            "length": 32
+          }
+        }
+      ],
+      "result type": {
+        "type-name": "Bytes",
+        "length": 32
+      }
+    }
+  ],
+  "contracts": [
+  ]
+}
