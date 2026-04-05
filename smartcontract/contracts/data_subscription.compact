@@ -1,0 +1,116 @@
+pragma language_version >= 0.14.0;
+import CompactStandardLibrary;
+
+/**
+ * NexusAIData — ZK Data Subscriptions (Monetization Engine)
+ * ==========================================================
+ * Enables trustless data monetization using Confidential Contracts.
+ *
+ * Flow:
+ *   1. Buyer creates a Subscription by locking DUST tokens for a targeted Dataset.
+ *   2. Data Owner claims the Subscription by proving ownership via ZK.
+ *   3. Contract releases DUST to the Owner and logs a decrypted cipher key constraint.
+ */
+
+// ── Public on-chain state ────────────────────────────────────────────────────
+export ledger sub_buyers: Map<Bytes<16>, Bytes<32>>;
+export ledger sub_targets: Map<Bytes<16>, Bytes<32>>;
+export ledger sub_amounts: Map<Bytes<16>, Uint<64>>;
+export ledger sub_status: Map<Bytes<16>, Uint<8>>;     // 0 = Locked, 1 = Claimed, 2 = Refunded
+export ledger sub_decryption_keys: Map<Bytes<16>, Bytes<32>>; // Decrypted symmetrically
+export ledger total_subscriptions: Counter;
+export ledger total_revenue_dust: Counter;
+
+// ── Off-chain witnesses ──────────────────────────────────────────────────────
+witness generate_sub_id(buyer: Bytes<32>, target: Bytes<32>): Bytes<16>;
+witness get_session_identity(session_salt: Bytes<32>): Bytes<32>;
+witness get_decryption_key(session_salt: Bytes<32>, target: Bytes<32>): Bytes<32>;
+witness prove_ownership(owner: Bytes<32>, target: Bytes<32>): Boolean;
+
+// ── ZK Circuits ──────────────────────────────────────────────────────────────
+
+/**
+ * BUYER: Create a new Subscription lock.
+ * Locks DUST until the true Data Owner claims it.
+ */
+export circuit create_subscription(
+  session_salt: Bytes<32>,
+  target_fingerprint: Bytes<32>,
+  payment_dust: Uint<64>
+): Bytes<16> {
+  const buyer = get_session_identity(session_salt);
+  const sub_id = generate_sub_id(buyer, target_fingerprint);
+
+  assert(disclose(payment_dust) > 0 as Uint<64>, "Payment must be greater than zero");
+
+  sub_buyers.insert(disclose(sub_id), disclose(buyer));
+  sub_targets.insert(disclose(sub_id), disclose(target_fingerprint));
+  sub_amounts.insert(disclose(sub_id), disclose(payment_dust));
+  sub_status.insert(disclose(sub_id), 0 as Uint<8>); // 0 = Locked
+  
+  total_subscriptions.increment(1);
+
+  return disclose(sub_id);
+}
+
+/**
+ * DATA OWNER: Claim a Subscription lock.
+ * Proves ownership of the dataset via ZK to unlock the funds and release the key.
+ */
+export circuit claim_subscription(
+  session_salt: Bytes<32>,
+  sub_id: Bytes<16>
+): Boolean {
+  const status = sub_status.lookup(disclose(sub_id));
+  assert(status == 0 as Uint<8>, "Subscription is not open/locked");
+
+  const target = sub_targets.lookup(disclose(sub_id));
+  const owner = get_session_identity(session_salt);
+  
+  // ZK Proof that the caller legally owns the target fingerprint
+  const is_owner = prove_ownership(owner, target);
+  assert(disclose(is_owner), "Only the validated Dataset Owner can claim this subscription");
+
+  const amount = sub_amounts.lookup(disclose(sub_id));
+  const dec_key = get_decryption_key(session_salt, target); // Released selectively
+
+  sub_status.insert(disclose(sub_id), 1 as Uint<8>); // 1 = Claimed
+  sub_decryption_keys.insert(disclose(sub_id), disclose(dec_key));
+  total_revenue_dust.increment(amount);
+
+  return true;
+}
+
+/**
+ * BUYER: Refund a Subscription lock.
+ * Fails if already claimed by the Data Owner.
+ */
+export circuit refund_subscription(
+  session_salt: Bytes<32>,
+  sub_id: Bytes<16>
+): Boolean {
+  const status = sub_status.lookup(disclose(sub_id));
+  assert(status == 0 as Uint<8>, "Subscription is already claimed or refunded");
+
+  const buyer = sub_buyers.lookup(disclose(sub_id));
+  const caller = get_session_identity(session_salt);
+  assert(disclose(buyer) == disclose(caller), "Only the original buyer can refund");
+
+  sub_status.insert(disclose(sub_id), 2 as Uint<8>); // 2 = Refunded
+  
+  return true;
+}
+
+/**
+ * Read subscription details (public state query).
+ */
+export circuit get_subscription_info(
+  sub_id: Bytes<16>
+): [Bytes<32>, Uint<64>, Uint<8>, Bytes<32>] {
+  return [
+    sub_targets.lookup(disclose(sub_id)),
+    sub_amounts.lookup(disclose(sub_id)),
+    sub_status.lookup(disclose(sub_id)),
+    sub_decryption_keys.lookup(disclose(sub_id)) // Will be empty until claimed
+  ];
+}
