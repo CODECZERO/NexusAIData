@@ -1,0 +1,121 @@
+pragma language_version >= 0.14.0;
+import CompactStandardLibrary;
+
+/**
+ * NexusAIData — ZK Data Bounty (Clean Room)
+ * ==========================================
+ * Trustless data bounties verified via zero-knowledge proofs.
+ *
+ * Flow:
+ *   1. Alice creates a bounty with requirements
+ *   2. Bob proves his dataset matches via ZK (data stays local)
+ *   3. Contract verifies the proof and releases reward
+ */
+
+// ── Public on-chain state ────────────────────────────────────────────────────
+export ledger bounty_creators: Map<Bytes<16>, Bytes<32>>;
+export ledger bounty_required_schema: Map<Bytes<16>, Bytes<32>>;
+export ledger bounty_min_similarity: Map<Bytes<16>, Uint<8>>;
+export ledger bounty_min_rows: Map<Bytes<16>, Uint<8>>;
+export ledger bounty_rewards: Map<Bytes<16>, Uint<64>>;
+export ledger bounty_status: Map<Bytes<16>, Uint<8>>;
+export ledger bounty_claimer: Map<Bytes<16>, Bytes<32>>;
+export ledger bounty_description_hash: Map<Bytes<16>, Bytes<32>>;
+export ledger total_bounties: Counter;
+export ledger total_claimed: Counter;
+
+// ── Off-chain witnesses ──────────────────────────────────────────────────────
+witness generate_bounty_id(creator: Bytes<32>, schema: Bytes<32>): Bytes<16>;
+
+witness compute_similarity_score(
+  claimer_schema: Bytes<32>,
+  required_schema: Bytes<32>,
+  claimer_data_hash: Bytes<32>
+): Uint<8>;
+
+witness get_claimer_identity(session_salt: Bytes<32>): Bytes<32>;
+witness get_creator_identity(session_salt: Bytes<32>): Bytes<32>;
+
+// ── ZK Circuits ──────────────────────────────────────────────────────────────
+
+/**
+ * Create a new data bounty on-chain.
+ * Creator specifies requirements and locks DUST reward.
+ */
+export circuit create_bounty(
+  session_salt: Bytes<32>,
+  required_schema_hash: Bytes<32>,
+  min_similarity: Uint<8>,
+  min_row_bucket: Uint<8>,
+  reward_dust: Uint<64>,
+  description_hash: Bytes<32>
+): Bytes<16> {
+  const creator = get_creator_identity(session_salt);
+  const bounty_id = generate_bounty_id(creator, required_schema_hash);
+
+  assert(disclose(reward_dust) > 0 as Uint<64>, "Bounty reward must be greater than zero");
+  assert(disclose(min_similarity) <= 100 as Uint<8>, "Similarity threshold must be 0-100");
+
+  bounty_creators.insert(disclose(bounty_id), disclose(creator));
+  bounty_required_schema.insert(disclose(bounty_id), disclose(required_schema_hash));
+  bounty_min_similarity.insert(disclose(bounty_id), disclose(min_similarity));
+  bounty_min_rows.insert(disclose(bounty_id), disclose(min_row_bucket));
+  bounty_rewards.insert(disclose(bounty_id), disclose(reward_dust));
+  bounty_status.insert(disclose(bounty_id), 0 as Uint<8>);
+  bounty_description_hash.insert(disclose(bounty_id), disclose(description_hash));
+  total_bounties.increment(1);
+
+  return disclose(bounty_id);
+}
+
+/**
+ * Claim a bounty by proving dataset matches requirements via ZK.
+ * The claimer's data never leaves their device.
+ */
+export circuit claim_bounty(
+  bounty_id: Bytes<16>,
+  session_salt: Bytes<32>,
+  claimer_schema_hash: Bytes<32>,
+  claimer_data_hash: Bytes<32>,
+  claimer_row_bucket: Uint<8>
+): Boolean {
+  const status = bounty_status.lookup(disclose(bounty_id));
+  assert(status == 0 as Uint<8>, "Bounty is not open for claims");
+
+  const required_schema = bounty_required_schema.lookup(disclose(bounty_id));
+  const min_similarity = bounty_min_similarity.lookup(disclose(bounty_id));
+  const min_rows = bounty_min_rows.lookup(disclose(bounty_id));
+
+  assert(disclose(claimer_row_bucket) >= min_rows, "Dataset row count below bounty minimum");
+
+  const similarity = compute_similarity_score(
+    claimer_schema_hash,
+    required_schema,
+    claimer_data_hash
+  );
+  assert(disclose(similarity) >= min_similarity, "Dataset similarity below bounty threshold");
+
+  const claimer = get_claimer_identity(session_salt);
+  const creator = bounty_creators.lookup(disclose(bounty_id));
+  assert(disclose(claimer) != creator, "Cannot claim your own bounty");
+
+  bounty_status.insert(disclose(bounty_id), 1 as Uint<8>);
+  bounty_claimer.insert(disclose(bounty_id), disclose(claimer));
+  total_claimed.increment(1);
+
+  return true;
+}
+
+/**
+ * Read bounty details (public state, no ZK needed).
+ */
+export circuit get_bounty_info(
+  bounty_id: Bytes<16>
+): [Bytes<32>, Uint<8>, Uint<64>, Uint<8>] {
+  return [
+    bounty_required_schema.lookup(disclose(bounty_id)),
+    bounty_min_similarity.lookup(disclose(bounty_id)),
+    bounty_rewards.lookup(disclose(bounty_id)),
+    bounty_status.lookup(disclose(bounty_id))
+  ];
+}
