@@ -1,0 +1,82 @@
+pragma language_version >= 0.14.0;
+import CompactStandardLibrary;
+
+/**
+ * NexusAIData — ZK Data Provenance (Lineage DAG)
+ * ===============================================
+ * Cryptographically links a derived dataset to its parent using ZK proofs,
+ * proving that specific transformations (e.g., anonymization) occurred 
+ * without revealing the actual dataset contents.
+ */
+
+// ── Public on-chain state ────────────────────────────────────────────────────
+// Maps a Commit ID to its Parent Commit ID (forming the DAG)
+export ledger lineage_parents: Map<Bytes<16>, Bytes<16>>; 
+
+// Maps a Commit ID to the actual Dataset State Hash
+export ledger lineage_state_hashes: Map<Bytes<16>, Bytes<32>>;
+
+// Maps a Commit ID to the Owner's anonymous identity
+export ledger lineage_owners: Map<Bytes<16>, Bytes<32>>;
+
+// Maps a Commit ID to the Hash of the Transformation Operation performed
+export ledger lineage_operations: Map<Bytes<16>, Bytes<32>>;
+
+// Counters
+export ledger total_commits: Counter;
+
+// ── Off-chain witnesses ──────────────────────────────────────────────────────
+witness get_session_identity(session_salt: Bytes<32>): Bytes<32>;
+witness compute_commit_id(parent_id: Bytes<16>, state_hash: Bytes<32>, op_hash: Bytes<32>): Bytes<16>;
+
+// A ZK witness that proves transformation was mathematically sound
+witness verify_transformation(
+  parent_state_hash: Bytes<32>, 
+  child_state_hash: Bytes<32>, 
+  operation_hash: Bytes<32>
+): Boolean;
+
+// ── ZK Circuits ──────────────────────────────────────────────────────────────
+
+/**
+ * Record a new commit in the Data Lineage DAG.
+ * Proves that taking `parent_id` and applying `operation_hash` results in `child_hash`.
+ */
+export circuit record_lineage(
+  session_salt: Bytes<32>,
+  is_root: Boolean,
+  parent_id: Bytes<16>,
+  child_hash: Bytes<32>,
+  operation_hash: Bytes<32>
+): Bytes<16> {
+  const owner = get_session_identity(session_salt);
+  const commit_id = compute_commit_id(parent_id, child_hash, operation_hash);
+
+  if (!disclose(is_root)) {
+      const stored_parent_hash = lineage_state_hashes.lookup(disclose(parent_id));
+      const is_valid_transform = verify_transformation(stored_parent_hash, child_hash, operation_hash);
+      assert(disclose(is_valid_transform), "Transformation math does not match child hash");
+  }
+
+  lineage_parents.insert(disclose(commit_id), disclose(parent_id));
+  lineage_state_hashes.insert(disclose(commit_id), disclose(child_hash));
+  lineage_owners.insert(disclose(commit_id), disclose(owner));
+  lineage_operations.insert(disclose(commit_id), disclose(operation_hash));
+  
+  total_commits.increment(1);
+
+  return disclose(commit_id);
+}
+
+/**
+ * Read details of a specific Provenance commit.
+ */
+export circuit get_provenance_info(
+  commit_id: Bytes<16>
+): [Bytes<16>, Bytes<32>, Bytes<32>] {
+  return [
+    lineage_parents.lookup(disclose(commit_id)),
+    lineage_state_hashes.lookup(disclose(commit_id)),
+    lineage_operations.lookup(disclose(commit_id))
+  ];
+}
