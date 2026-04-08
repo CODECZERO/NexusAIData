@@ -1,0 +1,218 @@
+{
+  "compiler-version": "0.30.0",
+  "language-version": "0.22.0",
+  "runtime-version": "0.15.0",
+  "circuits": [
+    {
+      "name": "register_fingerprint",
+      "pure": false,
+      "proof": true,
+      "arguments": [
+        {
+          "name": "column_names",
+          "type": {
+            "type-name": "Vector",
+            "length": 10,
+            "type": {
+              "type-name": "Bytes",
+              "length": 64
+            }
+          }
+        },
+        {
+          "name": "row_count",
+          "type": {
+            "type-name": "Uint",
+            "maxval": 4294967295
+          }
+        },
+        {
+          "name": "data_hash",
+          "type": {
+            "type-name": "Bytes",
+            "length": 32
+          }
+        },
+        {
+          "name": "session_salt",
+          "type": {
+            "type-name": "Bytes",
+            "length": 32
+          }
+        }
+      ],
+      "result-type": {
+        "type-name": "Bytes",
+        "length": 16
+      }
+    },
+    {
+      "name": "verify_ownership",
+      "pure": false,
+      "proof": true,
+      "arguments": [
+        {
+          "name": "fingerprint_id",
+          "type": {
+            "type-name": "Bytes",
+            "length": 16
+          }
+        },
+        {
+          "name": "session_salt",
+          "type": {
+            "type-name": "Bytes",
+            "length": 32
+          }
+        }
+      ],
+      "result-type": {
+        "type-name": "Boolean"
+      }
+    },
+    {
+      "name": "get_fingerprint_info",
+      "pure": false,
+      "proof": true,
+      "arguments": [
+        {
+          "name": "fingerprint_id",
+          "type": {
+            "type-name": "Bytes",
+            "length": 16
+          }
+        }
+      ],
+      "result-type": {
+        "type-name": "Tuple",
+        "types": [
+          {
+            "type-name": "Bytes",
+            "length": 32
+          },
+          {
+            "type-name": "Bytes",
+            "length": 32
+          },
+          {
+            "type-name": "Uint",
+            "maxval": 255
+          }
+        ]
+      }
+    }
+  ],
+  "witnesses": [
+    {
+      "name": "get_dataset_commitment",
+      "arguments": [
+        {
+          "name": "column_names",
+          "type": {
+            "type-name": "Vector",
+            "length": 10,
+            "type": {
+              "type-name": "Bytes",
+              "length": 64
+            }
+          }
+        },
+        {
+          "name": "row_count",
+          "type": {
+            "type-name": "Uint",
+            "maxval": 4294967295
+          }
+        },
+        {
+          "name": "data_hash",
+          "type": {
+            "type-name": "Bytes",
+            "length": 32
+          }
+        }
+      ],
+      "result type": {
+        "type-name": "Bytes",
+        "length": 32
+      }
+    },
+    {
+      "name": "get_owner_identity",
+      "arguments": [
+        {
+          "name": "session_salt",
+          "type": {
+            "type-name": "Bytes",
+            "length": 32
+          }
+        }
+      ],
+      "result type": {
+        "type-name": "Bytes",
+        "length": 32
+      }
+    },
+    {
+      "name": "compute_schema_hash",
+      "arguments": [
+        {
+          "name": "column_names",
+          "type": {
+            "type-name": "Vector",
+            "length": 10,
+            "type": {
+              "type-name": "Bytes",
+              "length": 64
+            }
+          }
+        }
+      ],
+      "result type": {
+        "type-name": "Bytes",
+        "length": 32
+      }
+    },
+    {
+      "name": "compute_fingerprint_id",
+      "arguments": [
+        {
+          "name": "commitment",
+          "type": {
+            "type-name": "Bytes",
+            "length": 32
+          }
+        },
+        {
+          "name": "owner",
+          "type": {
+            "type-name": "Bytes",
+            "length": 32
+          }
+        }
+      ],
+      "result type": {
+        "type-name": "Bytes",
+        "length": 16
+      }
+    },
+    {
+      "name": "get_row_bucket",
+      "arguments": [
+        {
+          "name": "row_count",
+          "type": {
+            "type-name": "Uint",
+            "maxval": 4294967295
+          }
+        }
+      ],
+      "result type": {
+        "type-name": "Uint",
+        "maxval": 255
+      }
+    }
+  ],
+  "contracts": [
+  ]
+}
