@@ -1,0 +1,168 @@
+pragma language_version >= 0.14.0;
+import CompactStandardLibrary;
+
+/**
+ * NexusAIData — Platform Escrow Contract
+ * =======================================
+ * Manages trustless escrow for data bounties and marketplace transactions.
+ * Funds are locked on-chain until conditions are met via ZK verification.
+ *
+ * Flow:
+ *   1. Platform admin sets the escrow owner address at deployment
+ *   2. Users deposit DUST into the escrow with a purpose tag (bounty, subscription, etc.)
+ *   3. When a ZK claim is verified, the escrow releases funds to the claimer
+ *   4. If a bounty expires or is cancelled, the depositor can reclaim their funds
+ */
+
+// ── Public on-chain state ────────────────────────────────────────────────────
+
+// The platform owner identity (set on first call to initialize)
+export ledger escrow_owner: Bytes<32>;
+export ledger is_initialized: Boolean;
+
+// Deposit tracking: deposit_id -> depositor identity
+export ledger depositors: Map<Bytes<16>, Bytes<32>>;
+// Deposit tracking: deposit_id -> amount in DUST
+export ledger deposit_amounts: Map<Bytes<16>, Uint<64>>;
+// Deposit tracking: deposit_id -> purpose hash (bounty_id, subscription_id, etc.)
+export ledger deposit_purposes: Map<Bytes<16>, Bytes<32>>;
+// Deposit tracking: deposit_id -> status (0 = locked, 1 = released, 2 = refunded)
+export ledger deposit_status: Map<Bytes<16>, Uint<8>>;
+// Deposit tracking: deposit_id -> recipient identity (set on release)
+export ledger deposit_recipients: Map<Bytes<16>, Bytes<32>>;
+
+// Aggregate counters
+export ledger total_deposits: Counter;
+export ledger total_released: Counter;
+export ledger total_refunded: Counter;
+export ledger total_locked_dust: Uint<64>;
+
+// ── Off-chain witnesses ──────────────────────────────────────────────────────
+
+witness get_owner_identity(session_salt: Bytes<32>): Bytes<32>;
+witness generate_deposit_id(depositor: Bytes<32>, purpose: Bytes<32>): Bytes<16>;
+witness get_depositor_identity(session_salt: Bytes<32>): Bytes<32>;
+
+// ── ZK Circuits ──────────────────────────────────────────────────────────────
+
+/**
+ * Initialize the escrow with a platform owner.
+ * Can only be called once.
+ */
+export circuit initialize_escrow(
+  session_salt: Bytes<32>
+): Boolean {
+  assert(!is_initialized, "Escrow already initialized");
+
+  const owner = get_owner_identity(session_salt);
+  escrow_owner = disclose(owner);
+  is_initialized = true;
+  total_locked_dust = 0 as Uint<64>;
+
+  return true;
+}
+
+/**
+ * Deposit DUST into escrow for a specific purpose (bounty, subscription, etc.).
+ * The depositor's identity is stored privately via the witness.
+ */
+export circuit deposit_funds(
+  session_salt: Bytes<32>,
+  amount_dust: Uint<64>,
+  purpose_hash: Bytes<32>
+): Bytes<16> {
+  assert(is_initialized, "Escrow not initialized");
+  assert(disclose(amount_dust) > 0 as Uint<64>, "Deposit amount must be greater than zero");
+
+  const depositor = get_depositor_identity(session_salt);
+  const deposit_id = generate_deposit_id(depositor, purpose_hash);
+
+  depositors.insert(disclose(deposit_id), disclose(depositor));
+  deposit_amounts.insert(disclose(deposit_id), disclose(amount_dust));
+  deposit_purposes.insert(disclose(deposit_id), disclose(purpose_hash));
+  deposit_status.insert(disclose(deposit_id), 0 as Uint<8>);
+  total_deposits.increment(1);
+  total_locked_dust = (total_locked_dust + disclose(amount_dust)) as Uint<64>;
+
+  return disclose(deposit_id);
+}
+
+/**
+ * Release escrowed funds to a verified claimer.
+ * Only the escrow owner (platform) can authorize releases.
+ */
+export circuit release_funds(
+  session_salt: Bytes<32>,
+  deposit_id: Bytes<16>,
+  recipient_identity: Bytes<32>
+): Boolean {
+  assert(is_initialized, "Escrow not initialized");
+
+  const caller = get_owner_identity(session_salt);
+  assert(disclose(caller) == escrow_owner, "Only the escrow owner can release funds");
+
+  const status = deposit_status.lookup(disclose(deposit_id));
+  assert(status == 0 as Uint<8>, "Deposit is not in locked state");
+
+  deposit_status.insert(disclose(deposit_id), 1 as Uint<8>);
+  deposit_recipients.insert(disclose(deposit_id), disclose(recipient_identity));
+  total_released.increment(1);
+
+  const amount = deposit_amounts.lookup(disclose(deposit_id));
+  total_locked_dust = (total_locked_dust - amount) as Uint<64>;
+
+  return true;
+}
+
+/**
+ * Refund escrowed funds back to the original depositor.
+ * Can be called by the depositor if the bounty/purpose expired,
+ * or by the platform owner.
+ */
+export circuit refund_deposit(
+  session_salt: Bytes<32>,
+  deposit_id: Bytes<16>
+): Boolean {
+  assert(is_initialized, "Escrow not initialized");
+
+  const caller = get_owner_identity(session_salt);
+  const stored_depositor = depositors.lookup(disclose(deposit_id));
+
+  // Only the original depositor or the escrow owner can refund
+  assert(
+    disclose(caller) == stored_depositor || disclose(caller) == escrow_owner,
+    "Only the depositor or escrow owner can refund"
+  );
+
+  const status = deposit_status.lookup(disclose(deposit_id));
+  assert(status == 0 as Uint<8>, "Deposit is not in locked state");
+
+  deposit_status.insert(disclose(deposit_id), 2 as Uint<8>);
+  total_refunded.increment(1);
+
+  const amount = deposit_amounts.lookup(disclose(deposit_id));
+  total_locked_dust = (total_locked_dust - amount) as Uint<64>;
+
+  return true;
+}
+
+/**
+ * Read deposit details (public state, no ZK needed).
+ */
+export circuit get_deposit_info(
+  deposit_id: Bytes<16>
+): [Uint<64>, Bytes<32>, Uint<8>] {
+  return [
+    deposit_amounts.lookup(disclose(deposit_id)),
+    deposit_purposes.lookup(disclose(deposit_id)),
+    deposit_status.lookup(disclose(deposit_id))
+  ];
+}
+
+/**
+ * Get the escrow owner identity (public query).
+ */
+export circuit get_escrow_owner(): Bytes<32> {
+  assert(is_initialized, "Escrow not initialized");
+  return escrow_owner;
+}

@@ -1,0 +1,63 @@
+{
+  "name": "nexusaidata-midnight-contracts",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "compile:fingerprint": "mkdir -p contracts/managed/data_fingerprint && compact compile contracts/data_fingerprint.compact contracts/managed/data_fingerprint",
+    "compile:bounty": "mkdir -p contracts/managed/data_bounty && compact compile contracts/data_bounty.compact contracts/managed/data_bounty",
+    "compile:audit": "mkdir -p contracts/managed/audit_proof && compact compile contracts/audit_proof.compact contracts/managed/audit_proof",
+    "compile:provenance": "mkdir -p contracts/managed/data_provenance && compact compile contracts/data_provenance.compact contracts/managed/data_provenance",
+    "compile:escrow": "mkdir -p contracts/managed/platform_escrow && compact compile contracts/platform_escrow.compact contracts/managed/platform_escrow",
+    "compile:all": "npm run compile:fingerprint && npm run compile:bounty && npm run compile:audit && npm run compile:provenance && npm run compile:escrow",
+    "build": "tsc",
+    "deploy": "tsx src/deploy.ts",
+    "create-wallet": "tsx src/create-wallet.ts",
+    "bridge": "npm run build && node dist/bridge.js",
+    "setup-local": "git clone https://github.com/midnightntwrk/midnight-local-dev.git local-dev && cd local-dev && npm install",
+    "start-local-network": "cd local-dev && npm start",
+    "clean": "rm -rf contracts/managed dist local-dev",
+    "start-proof-server": "docker rm -f midnight-proof-server 2>/dev/null; docker run --name midnight-proof-server -d -p 6300:6300 midnightntwrk/proof-server:8.0.3 -- midnight-proof-server -v && echo '✅ Proof server started at http://localhost:6300'",
+    "stop-proof-server": "docker rm -f midnight-proof-server 2>/dev/null && echo '✅ Proof server stopped'",
+    "proof-server-logs": "docker logs -f midnight-proof-server",
+    "full-deploy": "npm run start-proof-server && sleep 3 && npm run deploy"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.6",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^4.17.25",
+    "@types/node": "^22.0.0",
+    "@types/ws": "^8.18.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@meshsdk/midnight-setup": "^1.9.0-beta.98",
+    "@midnight-ntwrk/compact-js": "^2.5.0",
+    "@midnight-ntwrk/compact-runtime": "0.15.0",
+    "@midnight-ntwrk/ledger-v8": "^8.0.3",
+    "@midnight-ntwrk/midnight-js-contracts": "^4.0.2",
+    "@midnight-ntwrk/midnight-js-fetch-zk-config-provider": "^4.0.4",
+    "@midnight-ntwrk/midnight-js-http-client-proof-provider": "^4.0.2",
+    "@midnight-ntwrk/midnight-js-indexer-public-data-provider": "^4.0.2",
+    "@midnight-ntwrk/midnight-js-level-private-state-provider": "4.0.2",
+    "@midnight-ntwrk/midnight-js-network-id": "^4.0.2",
+    "@midnight-ntwrk/midnight-js-node-zk-config-provider": "^4.0.2",
+    "@midnight-ntwrk/midnight-js-types": "4.0.2",
+    "@midnight-ntwrk/wallet-sdk-abstractions": "^2.0.0",
+    "@midnight-ntwrk/wallet-sdk-address-format": "^3.1.0",
+    "@midnight-ntwrk/wallet-sdk-dust-wallet": "^3.0.0",
+    "@midnight-ntwrk/wallet-sdk-facade": "^3.0.0",
+    "@midnight-ntwrk/wallet-sdk-hd": "^3.0.1",
+    "@midnight-ntwrk/wallet-sdk-shielded": "^2.1.0",
+    "@midnight-ntwrk/wallet-sdk-unshielded-wallet": "^2.1.0",
+    "@scure/bip39": "^2.0.1",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.0",
+    "express": "^4.19.0",
+    "ws": "^8.20.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
